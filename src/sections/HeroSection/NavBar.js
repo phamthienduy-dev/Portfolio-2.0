@@ -1,18 +1,28 @@
-import modeToggle from "../../assets/modeToggle.svg";
-import ButtonPrimary from "../UI/ButtonPrimary";
+import React, { useState } from "react";
 
-const NavBar = () => {
+import modeToggle from "../../assets/modeToggle.svg";
+import ButtonPrimary from "../../UI/ButtonPrimary";
+
+const NavBar = (props) => {
+  const vietnamese = props.vietnamese;
+
+  const langueNotActive = "text-gray-300";
+
   const buttonHandler = () => {
     console.log("Button Clicked!");
+  };
+
+  const langueChangeHandler = () => {
+    props.setVietnamese((prevState) => !prevState);
   };
 
   return (
     <div className="font-bold p-2">
       <div className="grid grid-cols-3 text-gray-700">
         <div className="text-sm flex self-center gap-12 ">
-          <a href="#">GIỚI THIỆU</a>
-          <a href="#">DỰ ÁN</a>
-          <a href="#">LIÊN HỆ</a>
+          <a href="#">{vietnamese ? "GIỚI THIỆU" : "ABOUT"}</a>
+          <a href="#">{vietnamese ? "DỰ ÁN" : "PROJECTS"}</a>
+          <a href="#">{vietnamese ? "LIÊN HỆ" : "CONTACT"}</a>
         </div>
         <span className="text-4xl flex justify-self-center font-extrabold ">
           <div className="text-primary-200">DUY</div>
@@ -20,13 +30,24 @@ const NavBar = () => {
         </span>
         <div className="flex justify-self-end gap-12 self-center text-sm ">
           <div className="self-center">
-            <a href="#" className="text-gray-300">
+            <a
+              href="#"
+              className={vietnamese && langueNotActive}
+              onClick={langueChangeHandler}
+            >
               EN
             </a>{" "}
-            | <a href="#">VN</a>
+            |{" "}
+            <a
+              href="#"
+              className={!vietnamese && langueNotActive}
+              onClick={langueChangeHandler}
+            >
+              VN
+            </a>
           </div>
           <a href="#" className="self-center">
-            <img src={modeToggle} href="Dark Mode Toggle" />
+            <img src={modeToggle} alt="Darkmode Toggle" />
           </a>
           <a>
             <ButtonPrimary name="RESUME" handleClick={buttonHandler} />
