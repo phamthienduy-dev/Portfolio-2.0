@@ -44,7 +44,7 @@ const AboutCard = (props) => {
         </p>
       </div>
 
-      <div className="mt-16 p-3 grid grid-cols-2">
+      <div className="mt-24 p-3 grid grid-cols-2">
         <a
           href="#"
           className="text-xs font-bold text-gray-500 self-center ml-4"

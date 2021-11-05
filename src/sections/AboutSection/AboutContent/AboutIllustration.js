@@ -3,38 +3,81 @@ import React from "react";
 import HTMLLogo from "../../../assets/HTMLLogo.svg";
 import CSSLogo from "../../../assets/CSSLogo.svg";
 import TailwindLogo from "../../../assets/TailwindLogo.svg";
+import JavaScriptLogo from "../../../assets/JavaScriptLogo.svg";
+import ReduxLogo from "../../../assets/ReduxLogo.svg";
+import ReactLogo from "../../../assets/ReactLogo.svg";
+import GithubLogo from "../../../assets/GitHubLogo.svg";
+import GitLogo from "../../../assets/GitLogo.svg";
+import MenWithDocument from "../../../assets/MenWithDocument.svg";
+import MenSittingVietnamese from "../../../assets/MenSitting.svg";
+import MenSittingEnglish from "../../../assets/MenSittingEnglish.svg";
 
-const AboutIllustration = () => {
+const AboutIllustration = (props) => {
+  const vietnamese = props.vietnamese;
+
   return (
-    <div className="self-end justify-self-end">
-      <div className="grid grid-rows-5 bg-gradient-to-b from-primary-200  to-secondary-200 p-3 rounded-xl">
-        <div className="row-start-1 col-span-full bg-white m-4 h-20 rounded-xl w-96 hover:shadow-lg hover:-translate-y-0.5 transform transition">
-          <div className="flex h-full justify-center ">
-            <img src={HTMLLogo} className="h-12 w-12 self-center " />
-            <span className="self-center ml-3 font-semibold text-gray-500 text-xl">
-              HTML5
-            </span>
+    <div className="flex relative justify-end w-full">
+      <div className="w-2/5 absolute bottom-0 left-0 z-10">
+        <img src={MenWithDocument} alt="Men With Document" />
+      </div>
+      <div className="absolute z-10 w-1/2 top-3 right-11">
+        {vietnamese ? (
+          <img src={MenSittingVietnamese} alt="Men Sitting" />
+        ) : (
+          <img src={MenSittingEnglish} alt="Men Sitting" />
+        )}
+      </div>
+      <div className="self-end justify-self-end ">
+        <div className="grid grid-rows-5 bg-gradient-to-b from-primary-200  to-secondary-200 p-3 rounded-xl">
+          <div className=" row-start-1 col-span-full bg-white m-4 h-20 rounded-xl w-96 hover:shadow-lg hover:-translate-y-0.5 transform transition">
+            <div className="flex h-full justify-center ">
+              <img src={HTMLLogo} className="h-12 w-12 self-center " />
+              <span className="self-center ml-3 font-semibold text-gray-500 text-xl">
+                HTML5
+              </span>
+            </div>
           </div>
-        </div>
-        <div className="row-start-2  m-4 grid grid-cols-3 rounded-xl gap-3">
-          <div className="col-span-2 flex justify-center mr-2 bg-white rounded-xl hover:shadow-lg hover:-translate-y-0.5 transform transition">
-            <img src={CSSLogo} className="h-12 w-12 self-center " />
-            <span className="self-center ml-3 font-semibold text-gray-500 text-xl ">
-              CSS3
-            </span>
+          <div className="row-start-2  m-4 grid grid-cols-3 rounded-xl gap-5">
+            <div className="col-span-2 flex justify-center mr-2 bg-white rounded-xl hover:shadow-lg hover:-translate-y-0.5 transform transition">
+              <img src={CSSLogo} className="h-12 w-12 self-center " />
+              <span className="self-center ml-3 font-semibold text-gray-500 text-xl ">
+                CSS3
+              </span>
+            </div>
+            <div className="bg-white rounded-xl justify-center hover:shadow-lg hover:-translate-y-0.5 transform transition flex">
+              <img src={TailwindLogo} className="h-12 w-12 self-center" />
+            </div>
           </div>
-          <div className="bg-white rounded-xl justify-center hover:shadow-lg hover:-translate-y-0.5 transform transition">
-            <img src={TailwindLogo} className="h-12 w-12 self-center" />
+          <div className="row-start-3 bg-white m-4 rounded-xl hover:shadow-lg hover:-translate-y-0.5 transform transition">
+            <div className="flex h-full justify-center ">
+              <img src={JavaScriptLogo} className="h-12 w-12 self-center " />
+              <span className="self-center ml-3 font-semibold text-gray-500 text-xl">
+                JavaScript
+              </span>
+            </div>
           </div>
-        </div>
-        <div className="row-start-3 bg-white m-4 rounded-xl">JavaScript</div>
-        <div className="row-start-4 bg-white m-4 grid grid-cols-3 rounded-xl">
-          <div>Redux</div>
-          <div className="col-span-2">React</div>
-        </div>
-        <div className="row-start-5 bg-white m-4 grid grid-cols-3 rounded-xl">
-          <div className="col-span-2">GitHub</div>
-          <div>Git</div>
+          <div className="row-start-4  m-4 grid grid-cols-3 rounded-xl gap-5">
+            <div className="bg-white rounded-xl justify-center hover:shadow-lg hover:-translate-y-0.5 transform transition flex">
+              <img src={ReduxLogo} className="h-12 w-12 self-center" />
+            </div>
+            <div className="col-span-2 flex justify-center ml-2 bg-white rounded-xl hover:shadow-lg hover:-translate-y-0.5 transform transition">
+              <img src={ReactLogo} className="h-12 w-12 self-center " />
+              <span className="self-center ml-3 font-semibold text-gray-500 text-xl ">
+                React
+              </span>
+            </div>
+          </div>
+          <div className="row-start-5  m-4 grid grid-cols-3 rounded-xl gap-5">
+            <div className="col-span-2 flex justify-center mr-2 bg-white rounded-xl hover:shadow-lg hover:-translate-y-0.5 transform transition">
+              <img src={GithubLogo} className="h-12 w-12 self-center " />
+              <span className="self-center ml-3 font-semibold text-gray-500 text-xl ">
+                GitHub
+              </span>
+            </div>
+            <div className="bg-white rounded-xl justify-center hover:shadow-lg hover:-translate-y-0.5 transform transition flex">
+              <img src={GitLogo} className="h-12 w-12 self-center" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
