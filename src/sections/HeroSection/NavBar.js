@@ -12,7 +12,9 @@ const NavBar = (props) => {
     console.log("Button Clicked!");
   };
 
-  const langueChangeHandler = () => {
+  const langueChangeHandler = (e) => {
+    e.preventDefault();
+
     props.setVietnamese((prevState) => !prevState);
   };
 
@@ -20,9 +22,15 @@ const NavBar = (props) => {
     <div className="font-bold p-2">
       <div className="grid grid-cols-3 text-gray-700">
         <div className="text-sm flex self-center gap-12 ">
-          <a href="#">{vietnamese ? "GIỚI THIỆU" : "ABOUT"}</a>
-          <a href="#">{vietnamese ? "DỰ ÁN" : "PROJECTS"}</a>
-          <a href="#">{vietnamese ? "LIÊN HỆ" : "CONTACT"}</a>
+          <a href="#" className="hover:underline">
+            {vietnamese ? "GIỚI THIỆU" : "ABOUT"}
+          </a>
+          <a href="#" className="hover:underline">
+            {vietnamese ? "DỰ ÁN" : "PROJECTS"}
+          </a>
+          <a href="#" className="hover:underline">
+            {vietnamese ? "LIÊN HỆ" : "CONTACT"}
+          </a>
         </div>
         <span className="text-4xl flex justify-self-center font-extrabold ">
           <div className="text-primary-200">DUY</div>

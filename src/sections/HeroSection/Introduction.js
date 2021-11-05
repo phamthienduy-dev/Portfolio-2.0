@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import ButtonPrimary from "../../UI/ButtonPrimary";
-import heroIllustration from "../../assets/heroIllustration.svg";
+import heroIllustration from "../../assets/Asset3.svg";
 import SocialMediaIcons from "./SocialMediaIcons";
 
 const Introduction = (props) => {
@@ -15,10 +15,10 @@ const Introduction = (props) => {
         </span>
         <div className="text-5xl font-medium mb-5">
           <span className="text-primary-200">
-            {vietnamese ? "Phạm" : "Pham"}{" "}
+            {vietnamese ? "Phạm " : "Pham "}
           </span>
           <span className="text-secondary-200">
-            {vietnamese ? "Thiên" : "Thien"}{" "}
+            {vietnamese ? "Thiên " : "Thien "}
           </span>
           <span className="text-primary-200">Duy</span>
         </div>
