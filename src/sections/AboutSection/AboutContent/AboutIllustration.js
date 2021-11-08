@@ -9,8 +9,8 @@ import ReactLogo from "../../../assets/ReactLogo.svg";
 import GithubLogo from "../../../assets/GitHubLogo.svg";
 import GitLogo from "../../../assets/GitLogo.svg";
 import MenWithDocument from "../../../assets/MenWithDocument.svg";
-import MenSittingVietnamese from "../../../assets/MenSitting.svg";
-import MenSittingEnglish from "../../../assets/MenSittingEnglish.svg";
+import ManSittingVietnamese from "../../../assets/ManSitting.svg";
+import ManSittingEnglish from "../../../assets/ManSittingEnglish.svg";
 
 const AboutIllustration = (props) => {
   const vietnamese = props.vietnamese;
@@ -20,15 +20,15 @@ const AboutIllustration = (props) => {
       <div className="w-2/5 absolute bottom-0 left-0 z-10">
         <img src={MenWithDocument} alt="Men With Document" />
       </div>
-      <div className="absolute z-10 w-1/2 top-3 right-11">
+      <div className="absolute z-20 w-1/2 top-3 right-11">
         {vietnamese ? (
-          <img src={MenSittingVietnamese} alt="Men Sitting" />
+          <img src={ManSittingVietnamese} alt="Men Sitting" />
         ) : (
-          <img src={MenSittingEnglish} alt="Men Sitting" />
+          <img src={ManSittingEnglish} alt="Men Sitting" />
         )}
       </div>
       <div className="self-end justify-self-end ">
-        <div className="grid grid-rows-5 bg-gradient-to-b from-primary-200  to-secondary-200 p-3 rounded-xl">
+        <div className="grid grid-rows-5 bg-gradient-to-r from-primary-200  to-secondary-200 p-3 rounded-xl">
           <div className=" row-start-1 col-span-full bg-white m-4 h-20 rounded-xl w-96 hover:shadow-lg hover:-translate-y-0.5 transform transition">
             <div className="flex h-full justify-center ">
               <img src={HTMLLogo} className="h-12 w-12 self-center " />
@@ -37,7 +37,7 @@ const AboutIllustration = (props) => {
               </span>
             </div>
           </div>
-          <div className="row-start-2  m-4 grid grid-cols-3 rounded-xl gap-5">
+          <div className="row-start-2 m-4 grid grid-cols-3 rounded-xl gap-5">
             <div className="col-span-2 flex justify-center mr-2 bg-white rounded-xl hover:shadow-lg hover:-translate-y-0.5 transform transition">
               <img src={CSSLogo} className="h-12 w-12 self-center " />
               <span className="self-center ml-3 font-semibold text-gray-500 text-xl ">
