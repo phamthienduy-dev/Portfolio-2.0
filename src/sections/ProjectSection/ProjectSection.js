@@ -7,7 +7,7 @@ const ProjectSection = (props) => {
   return (
     <section className="mt-24">
       <ProjectHeading vietnamese={props.vietnamese} />
-      <Projects />
+      <Projects vietnamese={props.vietnamese} />
     </section>
   );
 };

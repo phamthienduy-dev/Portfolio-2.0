@@ -8,7 +8,7 @@ const AboutHeading = (props) => {
       <span className="font-semibold text-gray-400">
         {vietnamese ? "GIỚI THIỆU" : "ABOUT"}
       </span>
-      <h1 className="text-7xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-primary-200 to-secondary-200">
+      <h1 className="text-7xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-primary-200 to-secondary-200 pb-2">
         {vietnamese ? "Đôi điều về mình" : "Something about me"}
       </h1>
     </div>
