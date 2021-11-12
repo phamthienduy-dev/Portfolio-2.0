@@ -1,13 +1,13 @@
 import { React } from "react";
 
-import CTAIllustration from "./CTAIllustration";
+import CTAIllustrationTop from "./CTAIllustrationTop";
 
 const CTASection = (props) => {
   const vietnamese = props.vietnamese;
 
   return (
     <section className="container mt-56">
-      <CTAIllustration vietnamese={vietnamese} />
+      <CTAIllustrationTop vietnamese={vietnamese} />
     </section>
   );
 };

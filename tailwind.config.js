@@ -42,6 +42,10 @@ module.exports = {
         160: "40rem",
         76: "19rem",
         204: "51rem",
+        144: "36rem",
+        88: "22rem",
+        196: "49rem",
+        96: "24rem",
       },
       colors: {
         primary: {
