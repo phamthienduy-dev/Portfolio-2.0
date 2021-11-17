@@ -13,32 +13,32 @@ const Footer = (props) => {
           <div className="text-primary-200">DUY</div>
           <div className="text-secondary-200">FE</div>
         </span>
-        <div className="flex gap-3 pl-10 mt-2">
+        <div className="flex gap-3 mt-2">
           <a
             href="https://twitter.com/Thienduy181Duy"
             target="_blank"
-            className="hover:shadow-lg hover:-translate-y-0.5 transform transition p-2 rounded-lg h-8 w-8 bg-gray-200 self-center flex "
+            className="hover:shadow-lg hover:-translate-y-0.5 transform transition p-2 rounded-lg h-8 w-8 bg-gray-100 self-center flex "
           >
             <img src={twitter} alt="Twitter Icon" />
           </a>
           <a
             href="https://www.linkedin.com/in/ph%E1%BA%A1m-thi%C3%AAn-duy-76b347220/"
             target="_blank"
-            className="hover:shadow-lg hover:-translate-y-0.5 transform transition p-2 rounded-lg h-8 w-8 bg-gray-200 self-center flex"
+            className="hover:shadow-lg hover:-translate-y-0.5 transform transition p-2 rounded-lg h-8 w-8 bg-gray-100 self-center flex"
           >
             <img src={linkedin} alt="Linkedin Icon" />
           </a>
           <a
             href="https://github.com/phamthienduy-dev"
             target="_blank"
-            className="hover:shadow-lg hover:-translate-y-0.5 transform transition p-2 rounded-lg h-8 w-8 bg-gray-200 self-center flex"
+            className="hover:shadow-lg hover:-translate-y-0.5 transform transition p-2 rounded-lg h-8 w-8 bg-gray-100 self-center flex"
           >
             <img src={github} alt="Github Icon" />
           </a>
           <a
             href="https://www.facebook.com/phamthienduy181"
             target="_blank"
-            className="hover:shadow-lg hover:-translate-y-0.5 transform transition p-2 rounded-lg h-8 w-8 bg-gray-200 self-center flex"
+            className="hover:shadow-lg hover:-translate-y-0.5 transform transition p-2 rounded-lg h-8 w-8 bg-gray-100 self-center flex"
           >
             <img src={facebook} alt="Facebook Icon" />
           </a>
