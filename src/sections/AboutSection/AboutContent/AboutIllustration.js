@@ -16,11 +16,11 @@ const AboutIllustration = (props) => {
   const vietnamese = props.vietnamese;
 
   return (
-    <div className="flex relative justify-end w-full">
+    <div className="flex relative justify-end w-full ">
       <div className="w-2/5 absolute bottom-0 left-0 z-10">
         <img src={MenWithDocument} alt="Men With Document" />
       </div>
-      <div className="absolute z-20 w-1/2 top-3 right-11">
+      <div className="absolute z-20 w-1/2 top-1 right-11">
         {vietnamese ? (
           <img src={ManSittingVietnamese} alt="Men Sitting" />
         ) : (

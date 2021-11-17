@@ -46,25 +46,34 @@ module.exports = {
         88: "22rem",
         196: "49rem",
         96: "24rem",
+        214: "53.5rem",
+        "-14": "-3.5rem",
+        "-18": "-4.5rem",
+        328: "82rem",
+        0.92: "0.23rem",
       },
       colors: {
         primary: {
           100: "#58CAEA",
           200: "#339AF0",
+          300: "#407bff",
         },
         secondary: {
           100: "#7A5BF5",
           200: "#4933F0",
+          300: "#4C46BE",
         },
       },
       textColor: {
         primary: {
           100: "#58CAEA",
           200: "#339AF0",
+          300: "#407bff",
         },
         secondary: {
           100: "#7A5BF5",
           200: "#4933F0",
+          300: "#4C46BE",
         },
       },
       fontFamily: {
@@ -76,6 +85,9 @@ module.exports = {
         screens: {
           "2xl": "1366px",
         },
+      },
+      spacing: {
+        cta: "82rem",
       },
     },
   },

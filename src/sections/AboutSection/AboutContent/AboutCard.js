@@ -7,7 +7,7 @@ const AboutCard = (props) => {
   const vietnamese = props.vietnamese;
 
   return (
-    <div className="w-3/5 bg-white shadow-lg px-2 py-1 rounded-2xl">
+    <div className="w-3/5 bg-white shadow-lg px-2 py-1 rounded-2xl ">
       <img src={ProfilePic} className="inline-block" />
       <div className="mt-8 text-center text-gray-600 font-semibold text-xl">
         <p>
@@ -24,13 +24,13 @@ const AboutCard = (props) => {
         </p>
       </div>
 
-      <div className="mt-9 relative p-3">
+      <div className="mt-9 relative p-3 ">
         <span className="absolute text-7xl text-gray-300 flex">“</span>
         <span className="absolute text-7xl right-3 bottom-4 items-end transform rotate-180 text-gray-300">
           “
         </span>
         <p className="p-8 text-base text-gray-600 font-semibold">
-          {vietnamese ? "Mình yêu thích việc " : "I love "}
+          {vietnamese ? "Mình thích " : "I love "}
           <span className="text-primary-100">
             {vietnamese ? "thiết kế " : "designing "}
           </span>
@@ -52,7 +52,7 @@ const AboutCard = (props) => {
           RESUME
         </a>
         <div className="w-3/4 justify-self-end">
-          <PrimaryButton name="LIÊN HỆ" />
+          <PrimaryButton name={vietnamese ? "LIÊN HỆ" : "CONTACT"} />
         </div>
       </div>
     </div>

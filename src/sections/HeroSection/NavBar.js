@@ -12,7 +12,7 @@ const NavBar = (props) => {
     console.log("Button Clicked!");
   };
 
-  const langueChangeHandler = (e) => {
+  const languageChangeHandler = (e) => {
     e.preventDefault();
 
     props.setVietnamese((prevState) => !prevState);
@@ -41,7 +41,7 @@ const NavBar = (props) => {
             <a
               href="#"
               className={vietnamese && langueNotActive}
-              onClick={langueChangeHandler}
+              onClick={languageChangeHandler}
             >
               EN
             </a>{" "}
@@ -49,7 +49,7 @@ const NavBar = (props) => {
             <a
               href="#"
               className={!vietnamese && langueNotActive}
-              onClick={langueChangeHandler}
+              onClick={languageChangeHandler}
             >
               VN
             </a>

@@ -17,7 +17,7 @@ const Projects = (props) => {
         <Forkify vietnamese={props.vietnamese} />
       </div>
       <div>
-        <OMNIFOOD />
+        <OMNIFOOD vietnamese={props.vietnamese} />
       </div>
     </div>
   );
