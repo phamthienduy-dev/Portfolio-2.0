@@ -11,15 +11,17 @@ const Bankist = (props) => {
     <>
       <div className="h-full border-gradient-b-blue-purple-white border-transparent border-solid border-2 rounded-xl ">
         <div className="p-5 grid grid-cols-2 gap-5 h-full">
-          <div className="">
-            <img src={BankistPic} className="rounded-lg h-full" />
-          </div>
+          <img
+            src={BankistPic}
+            className="rounded-lg h-full"
+            alt="Bankist Project"
+          />
           <div className="py-9">
             <h1 className="text-3xl text-gray-500 font-semibold">BANKIST</h1>
             <div className="flex gap-1">
-              <img src={HTMLTag} />
-              <img src={CSSTag} />
-              <img src={JavaScriptTag} />
+              <img src={HTMLTag} alt="HTML Tag" />
+              <img src={CSSTag} alt="CSS Tag" />
+              <img src={JavaScriptTag} alt="JavaScript Tag" />
             </div>
             <p className="mt-4 text-gray-500">
               {vietnamese

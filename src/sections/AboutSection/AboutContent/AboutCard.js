@@ -24,7 +24,7 @@ const AboutCard = (props) => {
         </p>
       </div>
 
-      <div className="mt-9 relative p-3 ">
+      <blockquote className="mt-9 relative p-3 ">
         <span className="absolute text-7xl text-gray-300 flex">“</span>
         <span className="absolute text-7xl right-3 bottom-4 items-end transform rotate-180 text-gray-300">
           “
@@ -42,9 +42,9 @@ const AboutCard = (props) => {
             ? "những trang web trực quan, thân thiện với người dùng."
             : "beautiful, user-friendy websites."}
         </p>
-      </div>
+      </blockquote>
 
-      <div className="mt-24 p-3 grid grid-cols-2">
+      <a className="mt-24 p-3 grid grid-cols-2">
         <a
           href="#"
           className="text-xs font-bold text-gray-500 self-center ml-4"
@@ -54,7 +54,7 @@ const AboutCard = (props) => {
         <div className="w-3/4 justify-self-end">
           <PrimaryButton name={vietnamese ? "LIÊN HỆ" : "CONTACT"} />
         </div>
-      </div>
+      </a>
     </div>
   );
 };

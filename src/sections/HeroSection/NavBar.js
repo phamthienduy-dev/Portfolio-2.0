@@ -18,10 +18,16 @@ const NavBar = (props) => {
     props.setVietnamese((prevState) => !prevState);
   };
 
+  if (vietnamese) {
+    document.title = "Xin chào, mình là Duy!";
+  } else {
+    document.title = "Hi I am Duy!";
+  }
+
   return (
     <div className="font-bold p-2">
       <div className="grid grid-cols-3 text-gray-700">
-        <div className="text-sm flex self-center gap-12 ">
+        <nav className="text-sm flex self-center gap-12 ">
           <a href="#" className="hover:underline">
             {vietnamese ? "GIỚI THIỆU" : "ABOUT"}
           </a>
@@ -31,7 +37,7 @@ const NavBar = (props) => {
           <a href="#" className="hover:underline">
             {vietnamese ? "LIÊN HỆ" : "CONTACT"}
           </a>
-        </div>
+        </nav>
         <span className="text-4xl flex justify-self-center font-extrabold ">
           <div className="text-primary-200">DUY</div>
           <div className="text-secondary-200">FE</div>
@@ -57,9 +63,8 @@ const NavBar = (props) => {
           <a href="#" className="self-center">
             <img src={modeToggle} alt="Darkmode Toggle" />
           </a>
-          <a>
-            <ButtonPrimary name="RESUME" handleClick={buttonHandler} />
-          </a>
+
+          <ButtonPrimary name="RESUME" handleClick={buttonHandler} />
         </div>
       </div>
     </div>

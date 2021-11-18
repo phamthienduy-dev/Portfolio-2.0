@@ -13,9 +13,11 @@ function App() {
   return (
     <>
       <HeroSection vietnamese={vietnamese} setVietnamese={setVietnamese} />
-      <AboutSection vietnamese={vietnamese} />
-      <ProjectSection vietnamese={vietnamese} />
-      <CTASection vietnamese={vietnamese} />
+      <main>
+        <AboutSection vietnamese={vietnamese} />
+        <ProjectSection vietnamese={vietnamese} />
+        <CTASection vietnamese={vietnamese} />
+      </main>
       <Footer vietnamese={vietnamese} setVietnamese={setVietnamese} />
     </>
   );

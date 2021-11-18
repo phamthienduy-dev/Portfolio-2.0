@@ -12,15 +12,17 @@ const OMNIFOOD = (props) => {
     <>
       <div className="h-full border-gradient-b-blue-purple-white border-transparent border-solid border-2 rounded-xl ">
         <div className="p-5 grid grid-cols-2 gap-5 h-full">
-          <div className="">
-            <img src={OMNIFOODPic} className="rounded-lg " />
-          </div>
+          <img
+            src={OMNIFOODPic}
+            className="rounded-lg"
+            alt="OMNIFOOD project "
+          />
           <div className="py-9">
             <h1 className="text-3xl text-gray-500 font-semibold">OMNIFOOD</h1>
             <div className="flex gap-1">
-              <img src={HTMLTag} />
-              <img src={CSSTag} />
-              <img src={JavaScriptTag} />
+              <img src={HTMLTag} alt="HTML Tag" />
+              <img src={CSSTag} alt="CSS Tag" />
+              <img src={JavaScriptTag} alt="JavaScript Tag" />
             </div>
             <p className="mt-4 text-gray-500">
               {vietnamese
