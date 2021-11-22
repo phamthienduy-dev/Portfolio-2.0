@@ -30,12 +30,16 @@ const Forkify = (props) => {
                 : "You can search, add, bookmark your favorite cooking recipes."}
             </p>
             <div className="mt-6 flex gap-6 text-sm text-gray-500 h-9">
-              <button className="px-4 font-bold hover:shadow-xl hover:-translate-y-0.5 transform transition rounded-md">
+              <button className="shadow-md px-4 font-bold hover:shadow-xl transition rounded-md duration-300">
                 {vietnamese ? "XEM" : "VIEW"}
               </button>
-              <button className="font-bold px-4 bg-gradient-to-r from-secondary-200 to-primary-200 hover:shadow-lg hover:-translate-y-0.5 transform transition text-white rounded-md">
+              <a
+                className="font-bold px-4 py-2 bg-gradient-to-r from-secondary-200 to-primary-200 hover:shadow-lg transition text-white rounded-md duration-300"
+                target="_blank"
+                href="https://github.com/phamthienduy-dev/forkify"
+              >
                 SOURCE CODE
-              </button>
+              </a>
             </div>
           </div>
         </div>

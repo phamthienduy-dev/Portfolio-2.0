@@ -46,8 +46,9 @@ const AboutCard = (props) => {
 
       <a className="mt-24 p-3 grid grid-cols-2">
         <a
-          href="#"
-          className="text-xs font-bold text-gray-500 self-center ml-4"
+          className="text-sm font-bold text-gray-500 self-center ml-4 hover:text-gray-900 transition duration-300"
+          href="https://drive.google.com/file/d/1d3BCopD0BKiI7Wz4-xsmSHWynOhw82-r/view?usp=sharing"
+          target="_blank"
         >
           RESUME
         </a>

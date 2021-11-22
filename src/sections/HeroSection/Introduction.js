@@ -10,10 +10,10 @@ const Introduction = (props) => {
   return (
     <>
       <div className="text-center mt-20">
-        <span className="text-gray-400 font-medium">
+        <div className="text-gray-400 font-light mb-1">
           {vietnamese ? "Xin chào! Mình là" : "Hi! I am"}
-        </span>
-        <p className="text-5xl font-medium mb-5">
+        </div>
+        <p className="text-5xl mb-5 font-semibold">
           <span className="text-primary-200">
             {vietnamese ? "Phạm " : "Pham "}
           </span>

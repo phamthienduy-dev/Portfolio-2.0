@@ -34,6 +34,7 @@ module.exports = {
           4: "4px",
         },
       },
+      transform: ["hover", "focus"],
       inset: {
         22: "5.5rem",
         13: "3.25rem",
