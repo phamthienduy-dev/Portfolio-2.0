@@ -52,6 +52,8 @@ module.exports = {
         "-18": "-4.5rem",
         328: "82rem",
         0.92: "0.23rem",
+        142: "35.5rem",
+        192.8: "48.2rem",
       },
       colors: {
         primary: {
@@ -89,6 +91,8 @@ module.exports = {
       },
       spacing: {
         cta: "82rem",
+        44.8: "11.2rem",
+        20.4: "5.1rem",
       },
     },
   },

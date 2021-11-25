@@ -45,14 +45,14 @@ const Footer = (props) => {
         </div>
       </div>
       <div>
-        <ul className="flex flex-col gap-4 text-gray-600 font-semibold pl-9">
-          <li>
+        <ul className="flex flex-col gap-4 text-gray-500 font-semibold pl-9">
+          <li className="hover:text-gray-800 transition duration-300">
             <a href="#">{vietnamese ? "Giới thiệu" : "About"}</a>
           </li>
-          <li>
+          <li className="hover:text-gray-800 transition duration-300">
             <a href="#">{vietnamese ? "Dự án" : "Projects"}</a>
           </li>
-          <li>
+          <li className="hover:text-gray-800 transition duration-300">
             <a href="#">Resume</a>
           </li>
         </ul>
