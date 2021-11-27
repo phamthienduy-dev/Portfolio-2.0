@@ -6,9 +6,9 @@ const CTASection = (props) => {
   const vietnamese = props.vietnamese;
 
   return (
-    <section className="container mt-56 flex-col h-cta" id="cta-section">
+    <div className="container mt-56 flex-col h-cta" id="cta-section">
       <CTAIllustrationTop vietnamese={vietnamese} />
-    </section>
+    </div>
   );
 };
 

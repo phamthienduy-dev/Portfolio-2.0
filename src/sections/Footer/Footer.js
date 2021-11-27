@@ -7,7 +7,7 @@ const Footer = (props) => {
   const vietnamese = props.vietnamese;
 
   return (
-    <footer className="mt-64 container grid grid-cols-3 mb-9 px-11">
+    <div className="mt-64 container grid grid-cols-3 mb-9 px-11">
       <div className="">
         <span className="text-2xl flex justify-self-center font-extrabold ">
           <div className="text-primary-200">DUY</div>
@@ -72,7 +72,7 @@ const Footer = (props) => {
           </address>
         </div>
       </div>
-    </footer>
+    </div>
   );
 };
 

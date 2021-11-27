@@ -3,6 +3,7 @@ import { React } from "react";
 import OMNIFOOD from "./OMNIFOOD";
 import Bankist from "./Bankist";
 import Forkify from "./forkify";
+import AmazonClone from "./amazonClone";
 
 const Projects = (props) => {
   return (
@@ -17,7 +18,7 @@ const Projects = (props) => {
         <Forkify vietnamese={props.vietnamese} />
       </div>
       <div>
-        <OMNIFOOD vietnamese={props.vietnamese} />
+        <AmazonClone vietnamese={props.vietnamese} />
       </div>
     </div>
   );

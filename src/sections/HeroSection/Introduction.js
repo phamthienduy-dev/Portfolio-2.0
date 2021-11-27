@@ -9,7 +9,7 @@ const Introduction = (props) => {
 
   return (
     <>
-      <div className="text-center mt-20">
+      <div className="text-center mt-16">
         <div className="text-gray-400 font-light mb-1">
           {vietnamese ? "Xin chào! Mình là" : "Hi! I am"}
         </div>
