@@ -1,6 +1,10 @@
-import modeToggle from "../../assets/modeToggle.svg";
+import React, { useState, useContext } from "react";
+
+import { BiSun, BiMoon } from "react-icons/bi";
+import { ThemeContext } from "../../context/theme-context";
 
 const NavBar = (props) => {
+  const { theme, setTheme } = useContext(ThemeContext);
   const vietnamese = props.vietnamese;
 
   const langueNotActive =
@@ -8,18 +12,14 @@ const NavBar = (props) => {
 
   const languageChangeHandler = (e) => {
     e.preventDefault();
-
     props.setVietnamese((prevState) => !prevState);
   };
 
-  if (vietnamese) {
-    document.title = "Xin chào, mình là Duy!";
-  } else {
-    document.title = "Hi I am Duy!";
-  }
-
   return (
-    <div className="mt-8 font-bold py-4 px-5 sticky z-50 top-0 container bg-gray-50 rounded-tl-2xl rounded-tr-2xl">
+    <header
+      id="nav"
+      className="font-bold py-4 px-5 sticky top-0 z-50 container bg-gray-50 rounded-tl-2xl rounded-tr-2xl "
+    >
       <div className="grid grid-cols-2 text-gray-500">
         <div className="text-4xl flex  font-extrabold justify-self-start ">
           <a href="/">
@@ -60,7 +60,17 @@ const NavBar = (props) => {
               </a>
             </div>
             <a href="#" className="self-center">
-              <img src={modeToggle} alt="Darkmode Toggle" />
+              {theme === "dark" ? (
+                <BiSun
+                  className="h-6 w-6"
+                  onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                />
+              ) : (
+                <BiMoon
+                  className="h-6 w-6"
+                  onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+                />
+              )}
             </a>
             <a
               className="bg-gradient-to-r from-secondary-200 to-primary-200 hover:shadow-lg transition duration-300  text-white font-semibold py-2 px-8 rounded-md text-sm "
@@ -72,7 +82,7 @@ const NavBar = (props) => {
           </div>
         </nav>
       </div>
-    </div>
+    </header>
   );
 };
 

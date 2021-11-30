@@ -34,7 +34,7 @@ const CTAIllustrationTop = (props) => {
               id="email"
               placeholder="yourname@email.com"
               required
-              className="w-full px-3 border-none  focus:ring-2 focus:ring-blue-600 focus:outline-none"
+              className="w-full px-3 border-none focus:ring-2 focus:ring-blue-600 focus:outline-none"
             />
             <button className="bg-gradient-to-r rounded-md from-secondary-200 to-primary-200 hover:shadow-lg text-white font-semibold py-2 px-8 text-sm ">
               {vietnamese ? "Gửi" : "SUBMIT"}
