@@ -10,25 +10,27 @@ function AmazonClone(props) {
 
   return (
     <div className="h-full border-gradient-b-blue-purple-white border-transparent border-solid border-2 rounded-xl ">
-      <div className="p-5 grid grid-cols-2 gap-5 h-full">
+      <div className="p-5 grid grid-cols-2 gap-5 h-full dark:bg-gray-800 rounded-lg ">
         <img
           src={AmazonClonePic}
           className="rounded-lg"
           alt="Amazon Clone project "
         />
         <div className="py-9">
-          <h1 className="text-3xl text-gray-500 font-semibold">Amazon Clone</h1>
+          <h1 className="text-3xl text-gray-500 font-semibold dark:text-gray-200">
+            Amazon Clone
+          </h1>
           <div className="flex gap-1">
             <img src={HTMLTag} alt="HTML Tag" />
             <img src={CSSTag} alt="CSS Tag" />
             <img src={ReactTag} alt="React Tag" />
           </div>
-          <p className="mt-4 text-gray-500">
+          <p className="mt-4 text-gray-500 dark:text-gray-200">
             {vietnamese ? "Amazon Clone project" : "Amazon Clone project"}
           </p>
-          <div className="mt-6 flex gap-6 text-sm text-gray-500 h-9">
+          <div className="mt-6 flex gap-6 text-sm text-gray-500 h-9 dark:text-gray-200">
             <a
-              className="shadow-md px-4 py-2 font-bold hover:shadow-x cursor-not-allowed transition rounded-md duration-300"
+              className="shadow-md px-4 py-2 font-bold hover:shadow-x cursor-not-allowed transition rounded-md duration-300 dark:bg-gray-900"
               href="#"
               // target="_blank"
             >

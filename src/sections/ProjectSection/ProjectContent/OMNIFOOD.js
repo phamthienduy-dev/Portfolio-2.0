@@ -10,28 +10,30 @@ const OMNIFOOD = (props) => {
 
   return (
     <>
-      <div className="h-full border-gradient-b-blue-purple-white border-transparent border-solid border-2 rounded-xl ">
-        <div className="p-5 grid grid-cols-2 gap-5 h-full">
+      <div className="h-full border-gradient-b-blue-purple-white border-transparent border-solid  border-2 rounded-xl ">
+        <div className="p-5 grid grid-cols-2 gap-5 h-full dark:bg-gray-800 rounded-lg ">
           <img
             src={OMNIFOODPic}
             className="rounded-lg"
             alt="OMNIFOOD project "
           />
           <div className="py-9">
-            <h1 className="text-3xl text-gray-500 font-semibold">OMNIFOOD</h1>
+            <h1 className="text-3xl text-gray-500 dark:text-gray-200  font-semibold">
+              OMNIFOOD
+            </h1>
             <div className="flex gap-1">
               <img src={HTMLTag} alt="HTML Tag" />
               <img src={CSSTag} alt="CSS Tag" />
               <img src={JavaScriptTag} alt="JavaScript Tag" />
             </div>
-            <p className="mt-4 text-gray-500">
+            <p className="mt-4 text-gray-500 dark:text-gray-200">
               {vietnamese
                 ? "Landing page cho một dịch vụ ăn uống. Tập trung vào responsive và UI!"
                 : "Landing page for a food service. Focus in responsive and UI!"}
             </p>
-            <div className="mt-6 flex gap-6 text-sm text-gray-500 h-9">
+            <div className="mt-6 flex gap-6 text-sm text-gray-500 dark:text-gray-200  h-9">
               <a
-                className="shadow-md px-4 py-2 font-bold hover:shadow-xl transition rounded-md duration-300"
+                className="shadow-md px-4 py-2 font-bold hover:shadow-xl transition rounded-md duration-300 dark:bg-gray-900"
                 href="https://omnifood-duyfe.netlify.app/"
                 target="_blank"
               >

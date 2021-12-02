@@ -11,27 +11,29 @@ const Forkify = (props) => {
   return (
     <>
       <div className="h-full border-gradient-b-blue-purple-white border-transparent border-solid border-2 rounded-xl ">
-        <div className="p-5 grid grid-cols-2 gap-5 h-full">
+        <div className="p-5 grid grid-cols-2 gap-5 h-full dark:bg-gray-800 rounded-lg">
           <img
             src={forkifyPic}
             className="rounded-lg h-full"
             alt="forkify Project"
           />
           <div className="py-9">
-            <h1 className="text-3xl text-gray-500 font-semibold">forkify</h1>
+            <h1 className="text-3xl text-gray-500 dark:text-gray-200 font-semibold">
+              forkify
+            </h1>
             <div className="flex gap-1">
               <img src={HTMLTag} alt="HTML Tag" />
               <img src={CSSTag} alt="CSS Tag" />
               <img src={JavaScriptTag} alt="JavaScript Tag" />
             </div>
-            <p className="mt-4 text-gray-500">
+            <p className="mt-4 text-gray-500 dark:text-gray-200">
               {vietnamese
                 ? "Bạn có thể tìm kiếm, thêm, bookmark các công thức nấu ăn bạn thích."
                 : "You can search, add, bookmark your favorite cooking recipes."}
             </p>
-            <div className="mt-6 flex gap-6 text-sm text-gray-500 h-9">
+            <div className="mt-6 flex gap-6 text-sm text-gray-500 dark:text-gray-200  h-9">
               <a
-                className="shadow-md px-4 py-2 font-bold hover:shadow-xl transition rounded-md duration-300"
+                className="dark:bg-gray-900 shadow-md px-4 py-2 font-bold hover:shadow-xl transition rounded-md duration-300"
                 href="https://forkify-duyfe.netlify.app/"
                 target="_blank"
               >

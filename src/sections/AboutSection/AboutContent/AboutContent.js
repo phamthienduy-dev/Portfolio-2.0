@@ -5,7 +5,7 @@ import AboutIllustration from "./AboutIllustration";
 
 const AboutContent = (props) => {
   return (
-    <div className="container bg-gray-50 rounded-2xl my-8 py-12 px-16 grid grid-cols-2  ">
+    <div className="container bg-gray-50 dark:bg-gray-800 rounded-2xl my-8 py-12 px-16 grid grid-cols-2  ">
       <AboutCard vietnamese={props.vietnamese} />
       <AboutIllustration vietnamese={props.vietnamese} />
     </div>

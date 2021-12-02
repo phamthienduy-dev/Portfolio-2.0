@@ -1,16 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import ButtonPrimary from "../../UI/ButtonPrimary";
-import heroIllustration from "../../assets/heroIllustration.svg";
+import heroVectorLight from "../../assets/heroVectorLight.svg";
+import heroVectorDark from "../../assets/heroVectorDark.svg";
 import SocialMediaIcons from "./SocialMediaIcons";
+import { ThemeContext } from "../../context/theme-context";
 
 const Introduction = (props) => {
+  const { theme, setTheme } = useContext(ThemeContext);
   const vietnamese = props.vietnamese;
 
   return (
     <>
       <div className="text-center">
-        <div className="text-gray-400 font-light mb-1">
+        <div className="text-gray-400 font-light mb-1 dark:text-gray-200">
           {vietnamese ? "Xin chào! Mình là" : "Hi! I am"}
         </div>
         <p className="text-5xl mb-5 font-semibold">
@@ -26,7 +29,11 @@ const Introduction = (props) => {
       </div>
       <div className="relative">
         <SocialMediaIcons />
-        <img src={heroIllustration} alt="Hero Illustration" />
+        {theme === "light" ? (
+          <img src={heroVectorLight} alt="Hero Vector Light" />
+        ) : (
+          <img src={heroVectorDark} alt="Hero Vector Dark" />
+        )}
       </div>
     </>
   );

@@ -7,9 +7,9 @@ const AboutCard = (props) => {
   const vietnamese = props.vietnamese;
 
   return (
-    <div className="w-3/5 bg-white shadow-lg px-2 py-1 rounded-2xl ">
+    <div className="w-3/5 bg-white shadow-lg px-2 py-1 rounded-2xl dark:bg-gray-900">
       <img src={ProfilePic} className="inline-block" />
-      <div className="mt-8 text-center text-gray-600 font-semibold text-xl">
+      <div className="mt-8 text-center text-gray-600 font-semibold text-xl dark:text-gray-200">
         <p>
           {vietnamese ? "Xin chào! Mình là " : "Hi! My name is "}
           <span className="text-primary-100">
@@ -29,7 +29,7 @@ const AboutCard = (props) => {
         <span className="absolute text-7xl right-3 bottom-4 items-end transform rotate-180 text-gray-300">
           “
         </span>
-        <p className="p-8 text-base text-gray-600 font-semibold">
+        <p className="p-8 text-base text-gray-600 font-semibold dark:text-gray-200">
           {vietnamese ? "Mình thích " : "I love "}
           <span className="text-primary-100">
             {vietnamese ? "thiết kế " : "designing "}
@@ -46,7 +46,7 @@ const AboutCard = (props) => {
 
       <a className="mt-24 p-3 grid grid-cols-2">
         <a
-          className="text-sm font-bold text-gray-500 self-center ml-4 hover:text-gray-900 transition duration-300"
+          className="text-sm font-bold text-gray-500 self-center ml-4 hover:text-gray-900 transition duration-300 dark:text-gray-200 dark:hover:text-gray-500"
           href="https://drive.google.com/file/d/1d3BCopD0BKiI7Wz4-xsmSHWynOhw82-r/view?usp=sharing"
           target="_blank"
         >

@@ -17,56 +17,62 @@ const Footer = (props) => {
           <a
             href="https://twitter.com/Thienduy181Duy"
             target="_blank"
-            className="hover:shadow-lg hover:-translate-y-0.5 transform transition p-2 rounded-lg h-8 w-8 bg-gray-100 self-center flex "
+            className="hover:shadow-lg hover:-translate-y-0.5 transform transition p-2 rounded-lg h-8 w-8 bg-gray-100 dark:bg-gray-800 self-center flex "
           >
             <img src={twitter} alt="Twitter Icon" />
           </a>
           <a
             href="https://www.linkedin.com/in/ph%E1%BA%A1m-thi%C3%AAn-duy-76b347220/"
             target="_blank"
-            className="hover:shadow-lg hover:-translate-y-0.5 transform transition p-2 rounded-lg h-8 w-8 bg-gray-100 self-center flex"
+            className="hover:shadow-lg hover:-translate-y-0.5 transform transition p-2 rounded-lg h-8 w-8 bg-gray-100 dark:bg-gray-800 self-center flex"
           >
             <img src={linkedin} alt="Linkedin Icon" />
           </a>
           <a
             href="https://github.com/phamthienduy-dev"
             target="_blank"
-            className="hover:shadow-lg hover:-translate-y-0.5 transform transition p-2 rounded-lg h-8 w-8 bg-gray-100 self-center flex"
+            className="hover:shadow-lg hover:-translate-y-0.5 transform transition p-2 rounded-lg h-8 w-8 bg-gray-100 dark:bg-gray-800 self-center flex"
           >
             <img src={github} alt="Github Icon" />
           </a>
           <a
             href="https://www.facebook.com/phamthienduy181"
             target="_blank"
-            className="hover:shadow-lg hover:-translate-y-0.5 transform transition p-2 rounded-lg h-8 w-8 bg-gray-100 self-center flex"
+            className="hover:shadow-lg hover:-translate-y-0.5 transform transition p-2 rounded-lg h-8 w-8 bg-gray-100 dark:bg-gray-800 self-center flex"
           >
             <img src={facebook} alt="Facebook Icon" />
           </a>
         </div>
       </div>
       <div>
-        <ul className="flex flex-col gap-4 text-gray-500 font-semibold pl-9">
-          <li className="hover:text-gray-800 transition duration-300">
+        <ul className="flex flex-col gap-4 text-gray-500 font-semibold pl-9 ">
+          <li className="hover:text-gray-800 dark:hover:text-gray-200 transition duration-300">
             <a href="#">{vietnamese ? "Giới thiệu" : "About"}</a>
           </li>
-          <li className="hover:text-gray-800 transition duration-300">
+          <li className="hover:text-gray-800 transition duration-300 dark:hover:text-gray-200">
             <a href="#">{vietnamese ? "Dự án" : "Projects"}</a>
           </li>
-          <li className="hover:text-gray-800 transition duration-300">
+          <li className="hover:text-gray-800 transition duration-300 dark:hover:text-gray-200">
             <a href="#">Resume</a>
           </li>
         </ul>
       </div>
       <div>
         <div>
-          <address className="flex flex-col gap-4 text-gray-600 ">
+          <address className="flex flex-col gap-4 text-gray-600 dark:text-gray-500">
             <p className="not-italic font-semibold">
               {vietnamese ? "Liên lạc" : "Contact"}
             </p>
-            <a href="tel:084-938-004-592" className="text-gray-400">
+            <a
+              href="tel:084-938-004-592"
+              className="text-gray-400 dark:text-gray-200"
+            >
               0938 004 592
             </a>
-            <a href="mailto:duyphamthien@outlook.com" className="text-gray-400">
+            <a
+              href="mailto:duyphamthien@outlook.com"
+              className="text-gray-400 dark:text-gray-200"
+            >
               duyphamthien@outlook.com
             </a>
           </address>

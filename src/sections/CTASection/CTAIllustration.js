@@ -1,20 +1,57 @@
 import React from "react";
 
+import { ThemeContext } from "../../context/theme-context";
 import CTAComputer from "../../assets/ComputerVietnamese.svg";
 import CTAComputerEnglish from "../../assets/ComputerEnglish.svg";
+import CTAComputerDark from "../../assets/CTAComputerDark.svg";
+import CTAComputerDarkEnglish from "../../assets/CTAComputerEnglishDark.svg";
+
 import CTAIllustration from "../../assets/CTAIllustration.svg";
+import CTAIllustrationDark from "../../assets/CTAIllustrationDark.svg";
 
 const CTAIllustrationTop = (props) => {
   const vietnamese = props.vietnamese;
 
+  const { theme } = React.useContext(ThemeContext);
+
+  const renderVector = () => {
+    if (theme === "dark" && vietnamese) {
+      return (
+        <img
+          src={CTAComputerDark}
+          className="mx-auto w-4/6"
+          alt="CTA Vector Dark"
+        />
+      );
+    }
+    if (theme === "dark" && !vietnamese) {
+      return (
+        <img
+          src={CTAComputerDarkEnglish}
+          className="mx-auto w-4/6"
+          alt="CTA Vector Dark"
+        />
+      );
+    }
+    if (theme === "light" && vietnamese) {
+      return (
+        <img src={CTAComputer} className="mx-auto w-4/6" alt="CTA Vector" />
+      );
+    }
+    if (theme === "light" && !vietnamese) {
+      return (
+        <img
+          src={CTAComputerEnglish}
+          className="mx-auto w-4/6"
+          alt="CTA Vector"
+        />
+      );
+    }
+  };
+
   return (
     <div className="relative">
-      <div className="absolute w-full ">
-        <img
-          src={vietnamese ? CTAComputer : CTAComputerEnglish}
-          className="mx-auto w-4/6"
-        />
-      </div>
+      <div className="absolute w-full ">{renderVector()}</div>
       <button className="bg-secondary-200 font-bold text-white h-20.4 w-44.8 absolute top-88 left-142 rounded-xl hover:bg-secondary-100 transition duration-300">
         {vietnamese ? "ĐÁNH GIÁ" : "REVIEW"}
       </button>
@@ -23,27 +60,27 @@ const CTAIllustrationTop = (props) => {
       </button>
       <div className="absolute grid grid-cols-5 container bg-blue-400 w-full top-214 bg-gradient-to-b from-secondary-300 to-primary-300 rounded-xl z-10">
         <div className="col-start-1 col-span-3 py-28 pl-28">
-          <h1 className="text-white text-5xl font-semibold col leading-normal">
+          <h1 className="text-white dark:text-gray-800 text-5xl font-semibold col leading-normal">
             {vietnamese
               ? "Để lại email và mình sẽ liên hệ ngay nhé!"
               : "Leave your email and I will contact you shortly!"}
           </h1>
-          <form className="flex border-4 border-opacity-100 w-3/4 rounded-md mt-10 ">
+          <form className="flex dark:border-gray-900 border-4 border-opacity-100 w-3/4 rounded-md mt-10 ">
             <input
               type="email"
               id="email"
               placeholder="yourname@email.com"
               required
-              className="w-full px-3 border-none focus:ring-2 focus:ring-blue-600 focus:outline-none"
+              className="dark:bg-gray-800 dark:text-gray-200 w-full px-3 border-none focus:ring-2 focus:ring-blue-600 focus:outline-none"
             />
-            <button className="bg-gradient-to-r rounded-md from-secondary-200 to-primary-200 hover:shadow-lg text-white font-semibold py-2 px-8 text-sm ">
+            <button className="bg-gradient-to-r rounded-sm from-secondary-200 to-primary-200 hover:shadow-lg text-white font-semibold py-2 px-8 text-sm border-none">
               {vietnamese ? "Gửi" : "SUBMIT"}
             </button>
           </form>
         </div>
         <div className="relative col-span-2">
           <img
-            src={CTAIllustration}
+            src={theme === "light" ? CTAIllustration : CTAIllustrationDark}
             alt="CTA Illustration"
             className="w-full h-full absolute -bottom-18 -left-14 "
           />

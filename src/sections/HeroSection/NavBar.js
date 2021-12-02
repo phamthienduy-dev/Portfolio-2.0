@@ -8,7 +8,7 @@ const NavBar = (props) => {
   const vietnamese = props.vietnamese;
 
   const langueNotActive =
-    "text-gray-300 hover:text-gray-500 transition duration-300";
+    "text-gray-300 hover:text-gray-900 transition duration-300 dark:text-gray-600 dark:text-gray-200 dark:hover:text-gray-200";
 
   const languageChangeHandler = (e) => {
     e.preventDefault();
@@ -18,9 +18,9 @@ const NavBar = (props) => {
   return (
     <header
       id="nav"
-      className="font-bold py-4 px-5 sticky top-0 z-50 container bg-gray-50 rounded-tl-2xl rounded-tr-2xl "
+      className="font-bold py-4 px-5 sticky top-0 z-50 container bg-gray-50 rounded-tl-2xl rounded-tr-2xl dark:bg-gray-800  "
     >
-      <div className="grid grid-cols-2 text-gray-500">
+      <div className="grid grid-cols-2 text-gray-500 dark:text-gray-400 ">
         <div className="text-4xl flex  font-extrabold justify-self-start ">
           <a href="/">
             <span className="text-primary-200">DUY</span>
@@ -31,18 +31,18 @@ const NavBar = (props) => {
           <div className="flex justify-self-end gap-12 self-center text-sm ">
             <a
               href="#"
-              className="hover:text-gray-900 transition duration-300 self-center "
+              className="hover:text-gray-900 transition duration-300 self-center dark:hover:text-gray-200"
             >
               {vietnamese ? "GIỚI THIỆU" : "ABOUT"}
             </a>
             <a
               href="#"
-              className="hover:text-gray-900 transition duration-300 self-center"
+              className="hover:text-gray-900 transition duration-300 self-center dark:hover:text-gray-200"
             >
               {vietnamese ? "DỰ ÁN" : "PROJECTS"}
             </a>
 
-            <div className="self-center">
+            <div className="self-center ">
               <a
                 href="#"
                 className={vietnamese && langueNotActive}
@@ -59,16 +59,25 @@ const NavBar = (props) => {
                 VN
               </a>
             </div>
-            <a href="#" className="self-center">
+            <a
+              href="#"
+              className="self-center transition duration-500 ease-in-out"
+            >
               {theme === "dark" ? (
                 <BiSun
                   className="h-6 w-6"
-                  onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setTheme(theme === "dark" ? "light" : "dark");
+                  }}
                 />
               ) : (
                 <BiMoon
                   className="h-6 w-6"
-                  onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setTheme(theme === "light" ? "dark" : "light");
+                  }}
                 />
               )}
             </a>
