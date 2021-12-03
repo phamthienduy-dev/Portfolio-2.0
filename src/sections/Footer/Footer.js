@@ -1,3 +1,5 @@
+import { Link } from "react-scroll";
+
 import facebook from "../../assets/facebook.svg";
 import github from "../../assets/github.svg";
 import linkedin from "../../assets/linkedin.svg";
@@ -47,13 +49,35 @@ const Footer = (props) => {
       <div>
         <ul className="flex flex-col gap-4 text-gray-500 font-semibold pl-9 ">
           <li className="hover:text-gray-800 dark:hover:text-gray-200 transition duration-300">
-            <a href="#">{vietnamese ? "Giới thiệu" : "About"}</a>
+            <Link
+              to="about"
+              smooth={true}
+              offset={-120}
+              duration={500}
+              href="#"
+            >
+              {vietnamese ? "Giới thiệu" : "About"}
+            </Link>
           </li>
           <li className="hover:text-gray-800 transition duration-300 dark:hover:text-gray-200">
-            <a href="#">{vietnamese ? "Dự án" : "Projects"}</a>
+            <Link
+              to="project"
+              smooth={true}
+              offset={-120}
+              duration={500}
+              href="#"
+              href="#"
+            >
+              {vietnamese ? "Dự án" : "Projects"}
+            </Link>
           </li>
           <li className="hover:text-gray-800 transition duration-300 dark:hover:text-gray-200">
-            <a href="#">Resume</a>
+            <a
+              href="https://drive.google.com/file/d/1d3BCopD0BKiI7Wz4-xsmSHWynOhw82-r/view?usp=sharing"
+              target="_blank"
+            >
+              Resume
+            </a>
           </li>
         </ul>
       </div>

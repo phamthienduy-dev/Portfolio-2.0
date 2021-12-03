@@ -1,5 +1,7 @@
 module.exports = {
-  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+  mode: "jit",
+  important: true,
+  purge: ["./public/**/*.html", "./src/**/*.{js,jsx,ts,tsx,vue}"],
   darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
@@ -36,6 +38,7 @@ module.exports = {
       },
       transform: ["hover", "focus"],
       inset: {
+        "-1": "-1px",
         22: "5.5rem",
         13: "3.25rem",
         45: "45%",
@@ -93,6 +96,9 @@ module.exports = {
         cta: "82rem",
         44.8: "11.2rem",
         20.4: "5.1rem",
+      },
+      boxShadow: {
+        nav: "0 16px 44px rgba(0,0,0,0.08)",
       },
     },
   },

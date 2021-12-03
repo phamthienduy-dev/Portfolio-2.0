@@ -11,6 +11,10 @@ import Footer from "./sections/Footer/Footer";
 
 function App() {
   const [vietnamese, setVietnamese] = useState(true);
+  const { ref, inView, entry } = useInView({
+    rootMargin: "-72px 0px 0px 0px",
+    threshold: 0.4,
+  });
 
   if (vietnamese) {
     document.title = "Xin chào, mình là Duy!";
@@ -20,7 +24,12 @@ function App() {
 
   return (
     <div className="h-full pt-8 dark:bg-gray-900">
-      <NavBar vietnamese={vietnamese} setVietnamese={setVietnamese} />
+      <NavBar
+        ref={ref}
+        vietnamese={vietnamese}
+        setVietnamese={setVietnamese}
+        inView={inView}
+      />
       <HeroSection vietnamese={vietnamese} setVietnamese={setVietnamese} />
       <AboutSection vietnamese={vietnamese} />
       <ProjectSection vietnamese={vietnamese} />

@@ -5,7 +5,7 @@ import Projects from "./ProjectContent/Projects";
 
 const ProjectSection = (props) => {
   return (
-    <div className="mt-24" id="project-section">
+    <div className="mt-24" id="project">
       <ProjectHeading vietnamese={props.vietnamese} />
       <Projects vietnamese={props.vietnamese} />
     </div>
