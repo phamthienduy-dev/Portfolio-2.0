@@ -1,4 +1,4 @@
-import { Link } from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 import facebook from "../../assets/facebook.svg";
 import github from "../../assets/github.svg";
@@ -10,11 +10,14 @@ const Footer = (props) => {
 
   return (
     <div className="mt-64 container grid grid-cols-3 pb-9 px-11">
-      <div className="">
-        <span className="text-2xl flex justify-self-center font-extrabold ">
+      <div>
+        <a
+          className="text-2xl flex justify-self-center font-extrabold cursor-pointer"
+          onClick={() => scroll.scrollToTop()}
+        >
           <div className="text-primary-200">DUY</div>
           <div className="text-secondary-200">FE</div>
-        </span>
+        </a>
         <div className="flex gap-3 mt-2">
           <a
             href="https://twitter.com/Thienduy181Duy"

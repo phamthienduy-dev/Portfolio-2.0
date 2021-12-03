@@ -2,7 +2,8 @@ import React, { useState, useContext } from "react";
 
 import { BiSun, BiMoon } from "react-icons/bi";
 import { ThemeContext } from "../../context/theme-context";
-import { Link } from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
+import { motion } from "framer-motion";
 
 const NavBar = React.forwardRef((props, ref) => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -32,7 +33,10 @@ const NavBar = React.forwardRef((props, ref) => {
         }`}
       >
         <div className="grid grid-cols-2 text-gray-500 dark:text-gray-400 ">
-          <div className="text-4xl flex  font-extrabold justify-self-start ">
+          <div
+            className="text-4xl flex  font-extrabold justify-self-start"
+            onClick={() => scroll.scrollToTop()}
+          >
             <a href="#">
               <span className="text-primary-200">DUY</span>
               <span className="text-secondary-200">FE</span>
@@ -98,13 +102,15 @@ const NavBar = React.forwardRef((props, ref) => {
                   />
                 )}
               </a>
-              <a
+              <motion.a
                 className="bg-gradient-to-r from-secondary-200 to-primary-200 hover:shadow-lg transition duration-300  text-white font-semibold py-2 px-8 rounded-md text-sm dark:hover:shadow-dark"
                 href="https://drive.google.com/file/d/1d3BCopD0BKiI7Wz4-xsmSHWynOhw82-r/view?usp=sharing"
                 target="_blank"
+                whileHover={{ scale: 1.04 }}
+                whileTap={{ scale: 0.9 }}
               >
                 RESUME
-              </a>
+              </motion.a>
             </div>
           </nav>
         </div>
