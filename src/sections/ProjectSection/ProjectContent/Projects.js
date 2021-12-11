@@ -3,7 +3,7 @@ import { React } from "react";
 import Project from "./Project";
 
 import OMNIFOODPic from "../../../assets/Omnifood.png";
-import AmazonClonePic from "../../../assets/amazonClone.png";
+import AmazonClonePic from "../../../assets/amazon.png";
 import BankistPic from "../../../assets/Bankist.png";
 import forkifyPic from "../../../assets/forkify.png";
 import HTMLTag from "../../../assets/HTMLTag.svg";
