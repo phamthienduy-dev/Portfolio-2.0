@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { ThemeContext } from "../../context/theme-context";
 import CTAComputer from "../../assets/ComputerVietnamese.svg";
@@ -10,9 +10,10 @@ import CTAIllustration from "../../assets/CTAIllustration.svg";
 import CTAIllustrationDark from "../../assets/CTAIllustrationDark.svg";
 
 const CTAIllustrationTop = (props) => {
-  const vietnamese = props.vietnamese;
-
   const { theme } = React.useContext(ThemeContext);
+  const [enteredEmail, setEnteredEmail] = useState("hihi");
+
+  const vietnamese = props.vietnamese;
 
   const renderVector = () => {
     if (theme === "dark" && vietnamese) {
@@ -70,6 +71,7 @@ const CTAIllustrationTop = (props) => {
           </h1>
           <form className="flex dark:border-gray-900 border-4 border-opacity-100 w-3/4 rounded-md mt-10 ">
             <input
+              onChange={(e) => setEnteredEmail(e.target.value)}
               type="email"
               id="email"
               placeholder="yourname@email.com"
