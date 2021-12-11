@@ -3,7 +3,7 @@ import { React } from "react";
 import Project from "./Project";
 
 import OMNIFOODPic from "../../../assets/Omnifood.png";
-import AmazonClonePic from "../../../assets/AmazonClone.png";
+import AmazonClonePic from "../../../assets/amazonClone.png";
 import BankistPic from "../../../assets/Bankist.png";
 import forkifyPic from "../../../assets/forkify.png";
 import HTMLTag from "../../../assets/HTMLTag.svg";
@@ -77,7 +77,7 @@ const Projects = (props) => {
           description={
             vietnamese ? "Website clone amazon" : "Amazon clone website"
           }
-          url={`https://github.com/phamthienduy-dev/amazon-clone`}
+          url={`https://clone-2250a.web.app/`}
           sourceCode={`https://github.com/phamthienduy-dev/amazon-clone`}
           vietnamese={props.vietnamese}
         />

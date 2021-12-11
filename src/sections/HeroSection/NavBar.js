@@ -9,7 +9,6 @@ const NavBar = React.forwardRef((props, ref) => {
   const { theme, setTheme } = useContext(ThemeContext);
   const vietnamese = props.vietnamese;
   const inView = props.inView;
-  console.log(inView);
 
   const langueNotActive =
     "text-gray-300 hover:text-gray-900 transition duration-300 dark:text-gray-600 dark:text-gray-200 dark:hover:text-gray-200";
@@ -24,7 +23,7 @@ const NavBar = React.forwardRef((props, ref) => {
       ref={ref}
       id="nav"
       className={`transition-all sticky top-0 z-50 ${
-        !inView ? "w-full bg-white dark:bg-gray-900 shadow-2xl" : ""
+        !inView ? "w-full bg-white dark:bg-gray-900 shadow-lg" : ""
       }`}
     >
       <div

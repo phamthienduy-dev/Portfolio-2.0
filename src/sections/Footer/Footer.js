@@ -7,9 +7,10 @@ import twitter from "../../assets/twitter.svg";
 
 const Footer = (props) => {
   const vietnamese = props.vietnamese;
+  const year = new Date().getFullYear();
 
   return (
-    <div className="mt-64 container grid grid-cols-3 pb-9 px-11">
+    <div className="mt-64 container grid grid-cols-4  pb-9 px-11">
       <div>
         <a
           className="text-2xl flex justify-self-center font-extrabold cursor-pointer"
@@ -105,6 +106,7 @@ const Footer = (props) => {
           </address>
         </div>
       </div>
+      <div className="dark:text-gray-200 text-sm">{`Copyright © ${year} by Pham Thien Duy. All rights reserved.`}</div>
     </div>
   );
 };

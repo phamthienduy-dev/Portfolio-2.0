@@ -51,11 +51,14 @@ const CTAIllustrationTop = (props) => {
 
   return (
     <div className="relative">
-      <div className="absolute w-full ">{renderVector()}</div>
-      <button className="bg-secondary-200 font-bold text-white h-20.4 w-44.8 absolute top-88 left-142 rounded-xl hover:bg-secondary-100 transition duration-300">
+      <div className="absolute w-full">{renderVector()}</div>
+      <button
+        onClick={() => props.setShowModal(true)}
+        className="bg-secondary-200 font-bold text-white h-20.4 w-44.8 absolute top-88 left-142 rounded-xl hover:bg-secondary-100 transition duration-300"
+      >
         {vietnamese ? "ĐÁNH GIÁ" : "REVIEW"}
       </button>
-      <button className="bg-primary-200 font-bold text-white h-20.4 w-44.8 absolute top-88 left-192.8 rounded-xl hover:bg-primary-100 transition duration-300">
+      <button className="bg-primary-200 font-bold text-white h-20.4 w-44.8 absolute top-88 left-192.8 rounded-xl hover:bg-primary-100 transition duration-300 cursor-not-allowed">
         {vietnamese ? "LIÊN HỆ" : "CONTACT"}
       </button>
       <div className="absolute grid grid-cols-5 container bg-blue-400 w-full top-214 bg-gradient-to-b from-secondary-300 to-primary-300 rounded-xl z-10">
