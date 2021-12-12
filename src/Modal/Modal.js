@@ -20,7 +20,7 @@ function Modal(props) {
           {vietnamese ? "Đánh giá" : "Review"}
         </h1>
 
-        <form className="mt-12" name="review" method="POST" data-netlify="true">
+        <form className="mt-12" name="review" netlify>
           <div>
             <label className="font-semibold dark:text-gray-200">
               {vietnamese
@@ -57,7 +57,10 @@ function Modal(props) {
             />
           </div>
 
-          <button className="mt-4 bg-gradient-to-r from-secondary-200 to-primary-200 hover:shadow-lg  transition duration-300 text-white font-semibold px-12 py-2 rounded-md text-lg ">
+          <button
+            type="submit"
+            className="mt-4 bg-gradient-to-r from-secondary-200 to-primary-200 hover:shadow-lg  transition duration-300 text-white font-semibold px-12 py-2 rounded-md text-lg "
+          >
             Gửi
           </button>
         </form>
