@@ -20,14 +20,17 @@ function Modal(props) {
           {vietnamese ? "Đánh giá" : "Review"}
         </h1>
 
-        <form className="mt-12">
+        <form className="mt-12" name="review" method="POST" data-netlify="true">
           <div>
             <label className="font-semibold dark:text-gray-200">
               {vietnamese
                 ? "Bạn nghĩ sao về portfolio của mình ?"
                 : "What do you think about my portfolio?"}
             </label>
-            <textarea className="w-3/4 border-2 border-solid border-gray-500 p-2 rounded-md mt-1 dark:bg-gray-600 dark:text-gray-200" />
+            <textarea
+              name="opinion"
+              className="w-3/4 border-2 border-solid border-gray-500 p-2 rounded-md mt-1 dark:bg-gray-600 dark:text-gray-200"
+            />
           </div>
 
           <div className="mt-4">
@@ -36,7 +39,10 @@ function Modal(props) {
                 ? "Bạn có phát hiện ra lỗi? Nếu có hãy chỉ mình nhé!"
                 : "Have you spotted any bugs, please show me!"}
             </label>
-            <textarea className="w-3/4 border-2 border-solid border-gray-500 p-2 rounded-md mt-1 dark:bg-gray-600 dark:text-gray-200" />
+            <textarea
+              name="bugs"
+              className="w-3/4 border-2 border-solid border-gray-500 p-2 rounded-md mt-1 dark:bg-gray-600 dark:text-gray-200"
+            />
           </div>
 
           <div className="mt-4">
@@ -45,7 +51,10 @@ function Modal(props) {
                 ? "Mình cần làm gì để cải thiệt portfolio này?"
                 : "What should I do to improve this porfolio?"}
             </label>
-            <textarea className="w-3/4 h-64 border-2 border-solid border-gray-500 p-2 rounded-md mt-1 dark:bg-gray-600 dark:text-white" />
+            <textarea
+              name="improvement"
+              className="w-3/4 h-64 border-2 border-solid border-gray-500 p-2 rounded-md mt-1 dark:bg-gray-600 dark:text-white"
+            />
           </div>
 
           <button className="mt-4 bg-gradient-to-r from-secondary-200 to-primary-200 hover:shadow-lg  transition duration-300 text-white font-semibold px-12 py-2 rounded-md text-lg ">
@@ -54,8 +63,11 @@ function Modal(props) {
         </form>
       </div>
       <div className="flex items-center flex-col gap-1 relative pt-12 pb-14">
-        <div className="bg-gray-100 dark:bg-gray-600 absolute top-0 right-0 cursor-pointer p-2 rounded-full mt-2 mr-2">
-          <a onClick={props.onCloseModal} className="text-2xl">
+        <div
+          onClick={props.onCloseModal}
+          className="bg-gray-100 dark:bg-gray-600 absolute top-0 right-0 cursor-pointer p-2 rounded-full mt-2 mr-2"
+        >
+          <a className="text-2xl">
             <AiOutlineClose />
           </a>
         </div>
