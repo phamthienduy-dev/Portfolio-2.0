@@ -37,7 +37,7 @@ function Modal(props) {
                 ? "Bạn nghĩ sao về portfolio của mình ?"
                 : "What do you think about my portfolio?"}
             </label>
-            <textarea
+            <input
               id="opinion"
               name="opinion"
               className="w-3/4 border-2 border-solid border-gray-500 p-2 rounded-md mt-1 dark:bg-gray-600 dark:text-gray-200"
@@ -50,7 +50,7 @@ function Modal(props) {
                 ? "Bạn có phát hiện ra lỗi? Nếu có hãy chỉ mình nhé!"
                 : "Have you spotted any bugs, please show me!"}
             </label>
-            <textarea
+            <input
               id="bugs"
               name="bugs"
               className="w-3/4 border-2 border-solid border-gray-500 p-2 rounded-md mt-1 dark:bg-gray-600 dark:text-gray-200"
@@ -66,7 +66,7 @@ function Modal(props) {
                 ? "Mình cần làm gì để cải thiệt portfolio này?"
                 : "What should I do to improve this porfolio?"}
             </label>
-            <textarea
+            <input
               id="improvement"
               name="improvement"
               className="w-3/4 h-64 border-2 border-solid border-gray-500 p-2 rounded-md mt-1 dark:bg-gray-600 dark:text-white"
