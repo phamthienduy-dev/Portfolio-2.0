@@ -45,7 +45,7 @@ function Modal(props) {
           </div>
 
           <div className="mt-4">
-            <label className="font-semibold dark:text-gray-200" html="bugs">
+            <label className="font-semibold dark:text-gray-200" htmlFor="bugs">
               {vietnamese
                 ? "Bạn có phát hiện ra lỗi? Nếu có hãy chỉ mình nhé!"
                 : "Have you spotted any bugs, please show me!"}
@@ -66,11 +66,11 @@ function Modal(props) {
                 ? "Mình cần làm gì để cải thiệt portfolio này?"
                 : "What should I do to improve this porfolio?"}
             </label>
-            <input
+            <textarea
               id="improvement"
               name="improvement"
               className="w-3/4 h-64 border-2 border-solid border-gray-500 p-2 rounded-md mt-1 dark:bg-gray-600 dark:text-white"
-            />
+            ></textarea>
           </div>
 
           <button
@@ -93,7 +93,7 @@ function Modal(props) {
         <img
           src={theme === "light" ? formLightVector : formDarkVector}
           alt="Form Vector"
-          className="w-full"
+          className="w-2/3 flex self-end"
         />
       </div>
     </div>

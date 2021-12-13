@@ -1,7 +1,7 @@
 .modal {
   z-index: 9999;
   position: absolute;
-  /* max-width: 1366px; */
+  max-width: 1200px;
   /* top: 50%;
   left: 50%;
   right: auto;

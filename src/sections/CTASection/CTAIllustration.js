@@ -11,7 +11,6 @@ import CTAIllustrationDark from "../../assets/CTAIllustrationDark.svg";
 
 const CTAIllustrationTop = (props) => {
   const { theme } = React.useContext(ThemeContext);
-  const [enteredEmail, setEnteredEmail] = useState("hihi");
 
   const vietnamese = props.vietnamese;
 
@@ -69,16 +68,25 @@ const CTAIllustrationTop = (props) => {
               ? "Để lại email và mình sẽ liên hệ ngay nhé!"
               : "Leave your email and I will contact you shortly!"}
           </h1>
-          <form className="flex dark:border-gray-900 border-4 border-opacity-100 w-3/4 rounded-md mt-10 ">
+          <form
+            name="email"
+            data-netlify="true"
+            onSubmit="submit"
+            className="flex dark:border-gray-900 border-4 border-opacity-100 w-3/4 rounded-md mt-10 "
+          >
+            <input type="hidden" name="form-name" value="email" />
             <input
-              onChange={(e) => setEnteredEmail(e.target.value)}
+              name="email"
               type="email"
               id="email"
               placeholder="yourname@email.com"
               required
               className="dark:bg-gray-800 dark:text-gray-200 w-full px-3 border-none focus:ring-2 focus:ring-blue-600 focus:outline-none"
             />
-            <button className="bg-gradient-to-r rounded-sm from-secondary-200 to-primary-200 hover:shadow-lg text-white font-semibold py-2 px-8 text-sm border-none">
+            <button
+              type="submit"
+              className="bg-gradient-to-r rounded-sm from-secondary-200 to-primary-200 hover:shadow-lg text-white font-semibold py-2 px-8 text-sm border-none"
+            >
               {vietnamese ? "Gửi" : "SUBMIT"}
             </button>
           </form>
