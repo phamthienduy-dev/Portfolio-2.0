@@ -81,7 +81,7 @@ function Modal(props) {
           </button>
         </form>
       </div>
-      <div className="flex items-center flex-col gap-1 relative pt-12 pb-14">
+      <div className="flex items-center flex-col gap-1 relative pt-12 ">
         <div
           onClick={props.onCloseModal}
           className="bg-gray-100 dark:bg-gray-600 absolute top-0 right-0 cursor-pointer p-2 rounded-full mt-2 mr-2"
@@ -93,7 +93,7 @@ function Modal(props) {
         <img
           src={theme === "light" ? formLightVector : formDarkVector}
           alt="Form Vector"
-          className="w-2/3 flex self-end"
+          className="w-11/12 flex self-end"
         />
       </div>
     </div>

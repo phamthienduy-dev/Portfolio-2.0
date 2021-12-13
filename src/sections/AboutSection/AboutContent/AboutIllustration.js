@@ -21,16 +21,16 @@ const AboutIllustration = (props) => {
 
   const renderVector = () => {
     if (theme === "dark" && vietnamese) {
-      return <img src={ManSittingVietnameseDark} alt="About Vector Dark"/>;
+      return <img src={ManSittingVietnameseDark} alt="About Vector Dark" />;
     }
     if (theme === "dark" && !vietnamese) {
-      return <img src={ManSittingEnglishDark} alt="About Vector Dark"/>;
+      return <img src={ManSittingEnglishDark} alt="About Vector Dark" />;
     }
     if (theme === "light" && vietnamese) {
-      return <img src={ManSittingVietnamese} alt="About Vector"/>;
+      return <img src={ManSittingVietnamese} alt="About Vector" />;
     }
     if (theme === "light" && !vietnamese) {
-      return <img src={ManSittingEnglish} alt="About Vector"/>;
+      return <img src={ManSittingEnglish} alt="About Vector" />;
     }
   };
 
@@ -39,7 +39,9 @@ const AboutIllustration = (props) => {
       <div className="w-2/5 absolute bottom-0 left-0 z-10">
         <img src={MenWithDocument} alt="Men With Document" />
       </div>
-      <div className="absolute z-20 w-1/2 top-1 right-11">{renderVector()}</div>
+      <div className="absolute z-20 w-1/2 top-1 right-1/10">
+        {renderVector()}
+      </div>
       <div className="self-end justify-self-end ">
         <div className="grid grid-rows-5 bg-gradient-to-r from-primary-200  to-secondary-200 p-3 rounded-xl ">
           <div className=" row-start-1 col-span-full bg-white dark:bg-gray-800 dark:text-gray-200 m-4 h-20 rounded-xl w-96 hover:shadow-lg hover:-translate-y-0.5 transform transition">

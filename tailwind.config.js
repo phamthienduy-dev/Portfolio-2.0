@@ -5,6 +5,9 @@ module.exports = {
   darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
+      backgroundImage: {
+        "cta-vector": "url('../src/assets/ComputerVietnamese.svg')",
+      },
       linearBorderGradients: {
         directions: {
           // defaults to these values
@@ -57,6 +60,12 @@ module.exports = {
         0.92: "0.23rem",
         142: "35.5rem",
         192.8: "48.2rem",
+        188.4: "47.1rem",
+        144.8: "36.2rem",
+        76.8: "19.2rem",
+        "39%": "39%",
+        "41%": "41%",
+        "1/10": "10%",
       },
       colors: {
         primary: {
@@ -96,6 +105,8 @@ module.exports = {
         cta: "82rem",
         44.8: "11.2rem",
         20.4: "5.1rem",
+        39.6: "9.9rem",
+        18.4: "4.6rem",
       },
       boxShadow: {
         nav: "0 16px 44px rgba(0,0,0,0.08)",
