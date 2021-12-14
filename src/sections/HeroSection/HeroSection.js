@@ -1,7 +1,6 @@
-import React, { useState, useContext } from "react";
+import React from "react";
 
 import Introduction from "./Introduction";
-import { ThemeContext } from "../../context/theme-context";
 
 const HeroSection = (props) => {
   return (

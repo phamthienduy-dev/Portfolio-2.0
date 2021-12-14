@@ -10,6 +10,7 @@ import AboutSection from "./sections/AboutSection/AboutSection";
 import ProjectSection from "./sections/ProjectSection/ProjectSection";
 import CTASection from "./sections/CTASection/CTASection";
 import Footer from "./sections/Footer/Footer";
+import SocialMediaIcons from "./sections/HeroSection/SocialMediaIcons";
 
 ReactModal.setAppElement("#root");
 function App() {
@@ -44,6 +45,7 @@ function App() {
         <Modal onCloseModal={closeModalHandler} vietnamese={vietnamese} />
       </ReactModal>
       <div className="h-full pt-8 dark:bg-gray-900" id="app">
+        <SocialMediaIcons />
         <NavBar
           ref={ref}
           vietnamese={vietnamese}

@@ -46,14 +46,14 @@ const CTAIllustrationTop = (props) => {
   return (
     <>
       <div className="relative flex justify-center w-3/5 mx-auto">
-        <div className="absolute flex gap-5 top-41% left-39%">
+        <div className="absolute flex gap-5 top-41% left-39% w-full">
           <button
             onClick={() => props.setShowModal(true)}
-            className="bg-secondary-200 font-bold text-white h-18.4 w-39.6 rounded-xl hover:bg-secondary-100 transition duration-300"
+            className="bg-secondary-200 font-bold text-white py-5 w-19.7% rounded-xl hover:bg-secondary-100 transition duration-300"
           >
             {vietnamese ? "ĐÁNH GIÁ" : "REVIEW"}
           </button>
-          <button className="bg-primary-200 font-bold text-white h-18.4 w-39.6 rounded-xl hover:bg-primary-100 transition duration-300 cursor-not-allowed">
+          <button className="bg-primary-200 font-bold text-white py-5 w-19.7% rounded-xl hover:bg-primary-100 transition duration-300 cursor-not-allowed">
             {vietnamese ? "LIÊN HỆ" : "CONTACT"}
           </button>
         </div>

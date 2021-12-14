@@ -36,15 +36,16 @@ const AboutIllustration = (props) => {
 
   return (
     <div className="flex relative justify-end w-full ">
-      <div className="w-2/5 absolute bottom-0 left-0 z-10">
+      <div className="w-2/5 absolute bottom-0 -left-2 z-10">
         <img src={MenWithDocument} alt="Men With Document" />
       </div>
-      <div className="absolute z-20 w-1/2 top-1 right-1/10">
-        {renderVector()}
-      </div>
-      <div className="self-end justify-self-end ">
-        <div className="grid grid-rows-5 bg-gradient-to-r from-primary-200  to-secondary-200 p-3 rounded-xl ">
-          <div className=" row-start-1 col-span-full bg-white dark:bg-gray-800 dark:text-gray-200 m-4 h-20 rounded-xl w-96 hover:shadow-lg hover:-translate-y-0.5 transform transition">
+
+      <div className="self-end justify-self-end w-3/4">
+        <div className="relative w-full grid grid-rows-5 bg-gradient-to-r from-primary-200  to-secondary-200 p-3 rounded-xl ">
+          <div className="absolute z-20 w-72.8 -top-36 right-20">
+            {renderVector()}
+          </div>
+          <div className=" row-start-1 col-span-full bg-white dark:bg-gray-800 dark:text-gray-200 m-4 py-4  rounded-xl  hover:shadow-lg hover:-translate-y-0.5 transform transition">
             <div className="flex h-full justify-center ">
               <img
                 src={HTMLLogo}

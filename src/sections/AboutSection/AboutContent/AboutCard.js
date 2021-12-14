@@ -44,7 +44,7 @@ const AboutCard = (props) => {
         </p>
       </blockquote>
 
-      <a className="mt-24 p-3 grid grid-cols-2">
+      <a className="mt-24 mb-4 p-3 grid grid-cols-2">
         <a
           className="text-sm font-bold text-gray-500 self-center ml-4 hover:text-gray-900 transition duration-300 dark:text-gray-200 dark:hover:text-gray-500"
           href="https://drive.google.com/file/d/1d3BCopD0BKiI7Wz4-xsmSHWynOhw82-r/view?usp=sharing"
@@ -52,9 +52,6 @@ const AboutCard = (props) => {
         >
           RESUME
         </a>
-        <div className="w-3/4 justify-self-end">
-          <PrimaryButton name={vietnamese ? "LIÊN HỆ" : "CONTACT"} />
-        </div>
       </a>
     </div>
   );

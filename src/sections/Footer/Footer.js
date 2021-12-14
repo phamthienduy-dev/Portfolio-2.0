@@ -10,46 +10,15 @@ const Footer = (props) => {
   const year = new Date().getFullYear();
 
   return (
-    <div className="mt-64 container grid grid-cols-4  pb-9 px-11">
-      <div>
-        <a
-          className="text-2xl flex justify-self-center font-extrabold cursor-pointer"
-          onClick={() => scroll.scrollToTop()}
-        >
-          <div className="text-primary-200">DUY</div>
-          <div className="text-secondary-200">FE</div>
-        </a>
-        <div className="flex gap-3 mt-2">
-          <a
-            href="https://twitter.com/Thienduy181Duy"
-            target="_blank"
-            className="hover:shadow-lg hover:-translate-y-0.5 transform transition p-2 rounded-lg h-8 w-8 bg-gray-100 dark:bg-gray-800 self-center flex "
-          >
-            <img src={twitter} alt="Twitter Icon" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/ph%E1%BA%A1m-thi%C3%AAn-duy-76b347220/"
-            target="_blank"
-            className="hover:shadow-lg hover:-translate-y-0.5 transform transition p-2 rounded-lg h-8 w-8 bg-gray-100 dark:bg-gray-800 self-center flex"
-          >
-            <img src={linkedin} alt="Linkedin Icon" />
-          </a>
-          <a
-            href="https://github.com/phamthienduy-dev"
-            target="_blank"
-            className="hover:shadow-lg hover:-translate-y-0.5 transform transition p-2 rounded-lg h-8 w-8 bg-gray-100 dark:bg-gray-800 self-center flex"
-          >
-            <img src={github} alt="Github Icon" />
-          </a>
-          <a
-            href="https://www.facebook.com/phamthienduy181"
-            target="_blank"
-            className="hover:shadow-lg hover:-translate-y-0.5 transform transition p-2 rounded-lg h-8 w-8 bg-gray-100 dark:bg-gray-800 self-center flex"
-          >
-            <img src={facebook} alt="Facebook Icon" />
-          </a>
-        </div>
-      </div>
+    <div className="mt-12 container grid grid-cols-4  pb-9 px-11">
+      <a
+        className="text-4xl flex font-extrabold cursor-pointer pl-9"
+        onClick={() => scroll.scrollToTop()}
+      >
+        <div className="text-primary-200">DUY</div>
+        <div className="text-secondary-200">FE</div>
+      </a>
+
       <div>
         <ul className="flex flex-col gap-4 text-gray-500 font-semibold pl-9 ">
           <li className="hover:text-gray-800 dark:hover:text-gray-200 transition duration-300">

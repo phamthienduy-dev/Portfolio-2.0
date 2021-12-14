@@ -11,7 +11,7 @@ function Modal(props) {
 
   return (
     <div className="bg-white grid grid-cols-2 rounded-2xl dark:bg-gray-800">
-      <div className="pl-12 py-12">
+      <div className="pl-10 py-10">
         <div className="text-3xl flex font-extrabold justify-self-start ">
           <span className="text-primary-200">DUY</span>
           <span className="text-secondary-200">FE</span>
@@ -21,7 +21,7 @@ function Modal(props) {
         </h1>
 
         <form
-          className="mt-12"
+          className="mt-10"
           method="post"
           name="review"
           data-netlify="true"
@@ -69,7 +69,7 @@ function Modal(props) {
             <textarea
               id="improvement"
               name="improvement"
-              className="w-3/4 h-64 border-2 border-solid border-gray-500 p-2 rounded-md mt-1 dark:bg-gray-600 dark:text-white"
+              className="w-3/4 h-56 border-2 border-solid border-gray-500 p-2 rounded-md mt-1 dark:bg-gray-600 dark:text-white"
             ></textarea>
           </div>
 

@@ -27,8 +27,7 @@ const Introduction = (props) => {
         </p>
         <ButtonPrimary name={vietnamese ? "LIÊN HỆ" : "CONTACT"} />
       </div>
-      <div className="relative">
-        <SocialMediaIcons />
+      <div className="relative w-full">
         {theme === "light" ? (
           <img src={heroVectorLight} alt="Hero Vector Light" />
         ) : (
