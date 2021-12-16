@@ -18,7 +18,7 @@ function App() {
 
   const [vietnamese, setVietnamese] = useState(true);
   const { ref, inView } = useInView({
-    rootMargin: "-72px 0px 0px 0px",
+    rootMargin: "-60px 0px 0px 0px",
     threshold: 0.4,
   });
 
@@ -44,7 +44,7 @@ function App() {
       >
         <Modal onCloseModal={closeModalHandler} vietnamese={vietnamese} />
       </ReactModal>
-      <div className="h-full pt-8 dark:bg-gray-900" id="app">
+      <div className="h-full pt-6 dark:bg-gray-900" id="app">
         <SocialMediaIcons />
         <NavBar
           ref={ref}

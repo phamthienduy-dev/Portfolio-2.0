@@ -6,7 +6,7 @@ const CTASection = (props) => {
   const vietnamese = props.vietnamese;
 
   return (
-    <div className="container mt-56 flex-col h-cta" id="cta-section z-10">
+    <div className="container" id="cta">
       <CTAIllustrationTop
         vietnamese={vietnamese}
         setShowModal={props.setShowModal}

@@ -4,10 +4,12 @@ module.exports = {
   purge: ["./public/**/*.html", "./src/**/*.{js,jsx,ts,tsx,vue}"],
   darkMode: "class", // or 'media' or 'class'
   theme: {
+    screens: {
+      xl: { max: "1280px" },
+      lg: { max: "1140px" },
+      md: { max: "996px" },
+    },
     extend: {
-      backgroundImage: {
-        "cta-vector": "url('../src/assets/ComputerVietnamese.svg')",
-      },
       linearBorderGradients: {
         directions: {
           // defaults to these values
@@ -67,6 +69,8 @@ module.exports = {
         "41%": "41%",
         "1/10": "10%",
         "-32.6": "-8.15rem",
+        "-29.2": "-7.3rem",
+        13.6: "3.4rem",
       },
       colors: {
         primary: {
@@ -111,6 +115,12 @@ module.exports = {
         72.8: "18.2rem",
         184: "46rem",
         "19.7%": "19.7%",
+        "80%": "80%",
+        64.8: "16.2rem",
+        "88%": "88%",
+        58.8: "14.7rem",
+        296: "74rem",
+        248: "62rem",
       },
       boxShadow: {
         nav: "0 16px 44px rgba(0,0,0,0.08)",

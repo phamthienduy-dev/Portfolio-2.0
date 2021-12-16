@@ -11,12 +11,12 @@ const Introduction = (props) => {
   const vietnamese = props.vietnamese;
 
   return (
-    <>
+    <div className="mx-2 pt-10 bg-gray-50 rounded-bl-2xl rounded-br-2xl  px-2   dark:bg-gray-800">
       <div className="text-center">
         <div className="text-gray-400 font-light mb-1 dark:text-gray-200">
           {vietnamese ? "Xin chào! Mình là" : "Hi! I am"}
         </div>
-        <p className="text-5xl mb-5 font-semibold">
+        <p className="text-5xl lg:text-4xl mb-5 font-semibold">
           <span className="text-primary-200">
             {vietnamese ? "Phạm " : "Pham "}
           </span>
@@ -34,7 +34,7 @@ const Introduction = (props) => {
           <img src={heroVectorDark} alt="Hero Vector Dark" />
         )}
       </div>
-    </>
+    </div>
   );
 };
 
