@@ -1,12 +1,15 @@
 import React, { useState, useContext } from "react";
 
-import { BiSun, BiMoon } from "react-icons/bi";
+import { BiSun, BiMoon, BiMenu } from "react-icons/bi";
+import { AiOutlineClose } from "react-icons/ai";
 import { ThemeContext } from "../../context/theme-context";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { motion } from "framer-motion";
 
 const NavBar = React.forwardRef((props, ref) => {
   const { theme, setTheme } = useContext(ThemeContext);
+  const [mobileNav, setMobileNav] = useState(false);
+
   const vietnamese = props.vietnamese;
   const inView = props.inView;
 
@@ -16,6 +19,10 @@ const NavBar = React.forwardRef((props, ref) => {
   const languageChangeHandler = (e) => {
     e.preventDefault();
     props.setVietnamese((prevState) => !prevState);
+  };
+
+  const mobileNavHandler = () => {
+    setMobileNav((prevState) => !prevState);
   };
 
   return (
@@ -43,7 +50,12 @@ const NavBar = React.forwardRef((props, ref) => {
               <span className="text-secondary-200">FE</span>
             </a>
           </div>
-          <nav className="text-sm lg:text-xs flex self-center gap-12 lg:gap-8 justify-self-end ">
+          <nav className="md:flex self-center justify-end text-4xl 2xl:hidden 1xl:hidden xl:hidden lg:hidden">
+            <div onClick={mobileNavHandler}>
+              {!mobileNav ? <BiMenu /> : <AiOutlineClose />}
+            </div>
+          </nav>
+          <nav className="text-sm lg:text-xs flex self-center gap-12 lg:gap-8 justify-self-end md:hidden">
             <div className="flex justify-self-end gap-12 self-center lg:gap-8">
               <Link
                 to="about"
@@ -104,7 +116,7 @@ const NavBar = React.forwardRef((props, ref) => {
                 )}
               </a>
               <motion.a
-                className="bg-gradient-to-r from-secondary-200 to-primary-200 hover:shadow-lg dark:hover:bg-red-200 transition duration-300 text-white font-semibold py-2 px-6 rounded-md text-sm lg:text-xs lg:px-4 lg:py-1"
+                className="bg-gradient-to-r from-secondary-200 to-primary-200 hover:shadow-lg dark:hover:bg-red-200 transition duration-300 text-white font-semibold py-2 px-6 rounded-md text-sm lg:text-xs lg:px-4 lg:py-1 lg:rounded"
                 href="https://drive.google.com/file/d/1d3BCopD0BKiI7Wz4-xsmSHWynOhw82-r/view?usp=sharing"
                 target="_blank"
                 whileHover={{ scale: 1.04 }}

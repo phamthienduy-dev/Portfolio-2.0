@@ -36,7 +36,7 @@ const AboutIllustration = (props) => {
       <div
         className={`${
           props.className ? props.className : ""
-        } text-7xl dark:bg-gray-900 bg-gray-100 text-gray-600 px-5 py-7 text-center dark:text-gray-200 rounded-xl flex justify-center`}
+        } md:text-5xl lg:text-6xl text-7xl dark:bg-gray-900 bg-gray-100 text-gray-600 px-5 py-7 text-center dark:text-gray-200 rounded-xl flex justify-center`}
       >
         {props.children}
       </div>
@@ -45,39 +45,39 @@ const AboutIllustration = (props) => {
 
   return (
     <div className="flex-grow">
-      <div className="grid grid-cols-5 grid-rows-5 gap-7 ">
+      <div className="grid grid-cols-5 grid-rows-5 gap-7  xl:gap-6 md:gap-5">
         <GridItem className="text-center">
           <Skill />
         </GridItem>
-        <GridItem className="row-start-2">
+        <GridItem className="row-start-2 hover:shadow-lg hover:-translate-y-0.5 transform transition">
           <HTML />
         </GridItem>
-        <GridItem className="row-start-2"></GridItem>
-        <GridItem className="row-start-3">
+        <GridItem className="row-start-2 "></GridItem>
+        <GridItem className="row-start-3 hover:shadow-lg hover:-translate-y-0.5 transform transition">
           <CSS />
         </GridItem>
-        <GridItem className="row-start-3">
+        <GridItem className="row-start-3 hover:shadow-lg hover:-translate-y-0.5 transform transition">
           <JavaScript />
         </GridItem>
-        <div className="row-start-3 relative">
-          <img src={ManWorking} className="absolute -top-7" />
+        <div className="row-start-3 relative z-20">
+          <img src={ManWorking} className="absolute npm -top-7 md:-top-3" />
         </div>
 
         <GridItem className="row-start-4"></GridItem>
-        <GridItem className="row-start-4">
+        <GridItem className="row-start-4 hover:shadow-lg hover:-translate-y-0.5 transform transition">
           <Redux />
         </GridItem>
         <GridItem className="row-start-4"></GridItem>
         <GridItem className="row-start-4"></GridItem>
         <GridItem className="row-start-5"></GridItem>
         <GridItem className="row-start-5"></GridItem>
-        <GridItem className="row-start-5">
+        <GridItem className="row-start-5 hover:shadow-lg hover:-translate-y-0.5 transform transition">
           <Tailwind />
         </GridItem>
-        <GridItem className="row-start-5">
+        <GridItem className="row-start-5 hover:shadow-lg hover:-translate-y-0.5 transform transition">
           <Git />
         </GridItem>
-        <GridItem className="row-start-5">
+        <GridItem className="row-start-5 hover:shadow-lg hover:-translate-y-0.5 transform transition">
           <ReactLogo />
         </GridItem>
       </div>

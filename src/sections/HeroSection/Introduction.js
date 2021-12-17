@@ -11,7 +11,7 @@ const Introduction = (props) => {
   const vietnamese = props.vietnamese;
 
   return (
-    <div className="mx-2 pt-10 bg-gray-50 rounded-bl-2xl rounded-br-2xl  px-2   dark:bg-gray-800">
+    <div className="mx-2 pt-10 lg:pt-6 bg-gray-50 rounded-bl-2xl rounded-br-2xl  px-2   dark:bg-gray-800">
       <div className="text-center">
         <div className="text-gray-400 font-light mb-1 dark:text-gray-200">
           {vietnamese ? "Xin chào! Mình là" : "Hi! I am"}

@@ -5,6 +5,8 @@ module.exports = {
   darkMode: "class", // or 'media' or 'class'
   theme: {
     screens: {
+      "2xl": { min: "1366px" },
+      "1xl": { max: "1366px" },
       xl: { max: "1280px" },
       lg: { max: "1140px" },
       md: { max: "996px" },
@@ -71,6 +73,7 @@ module.exports = {
         "-32.6": "-8.15rem",
         "-29.2": "-7.3rem",
         13.6: "3.4rem",
+        12.8: "3.2rem",
       },
       colors: {
         primary: {
@@ -102,9 +105,6 @@ module.exports = {
       container: {
         center: true,
         padding: "1rem",
-        screens: {
-          "2xl": "1366px",
-        },
       },
       spacing: {
         cta: "82rem",
@@ -124,6 +124,9 @@ module.exports = {
       },
       boxShadow: {
         nav: "0 16px 44px rgba(0,0,0,0.08)",
+      },
+      margin: {
+        12.8: "3.2rem",
       },
     },
   },

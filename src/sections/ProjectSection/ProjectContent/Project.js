@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 function Project(props) {
   return (
     <div className="h-full border-gradient-b-blue-purple-white border-transparent border-solid border-2 rounded-xl ">
-      <div className="p-5 grid grid-cols-2 gap-5 h-full dark:bg-gray-800 rounded-lg ">
+      <div className="p-5 md:p-4 grid grid-cols-2 gap-5 h-full dark:bg-gray-800 rounded-lg ">
         <img src={props.image} className="rounded-lg" alt={`${props.image}`} />
         <div className="py-9 md:py-3 lg:py-5">
           <h1 className="text-3xl lg:text-2xl text-gray-500 font-semibold dark:text-gray-200">
@@ -36,7 +36,7 @@ function Project(props) {
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.9 }}
             >
-              SOURCE CODE
+              CODE
             </motion.a>
           </div>
         </div>
