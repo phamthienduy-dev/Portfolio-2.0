@@ -10,14 +10,14 @@ const SocialMediaIcons = () => {
         <a
           href="https://www.linkedin.com/in/ph%E1%BA%A1m-thi%C3%AAn-duy-76b347220/"
           target="_blank"
-          className="hover:shadow-lg hover:-translate-y-0.5 transform transition p-2 rounded-lg h-9 w-9 bg-gray-100 dark:bg-gray-700 self-center flex"
+          className="hover:shadow-lg hover:-translate-y-0.5 transform transition p-2 rounded-lg h-9 w-9 sm:h-7 sm:w-7 bg-gray-100 dark:bg-gray-700 self-center flex"
         >
           <img src={linkedin} alt="Linkedin Icon" />
         </a>
         <a
           href="https://github.com/phamthienduy-dev"
           target="_blank"
-          className="hover:shadow-lg hover:-translate-y-0.5 transform transition p-2 rounded-lg h-9 w-9 bg-gray-100 dark:bg-gray-700 self-center flex"
+          className="hover:shadow-lg hover:-translate-y-0.5 transform transition p-2 rounded-lg h-9 w-9 sm:h-7 sm:w-7 bg-gray-100 dark:bg-gray-700 self-center flex"
         >
           <img src={github} alt="Github Icon" />
         </a>

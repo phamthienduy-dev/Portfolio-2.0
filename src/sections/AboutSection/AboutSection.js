@@ -5,7 +5,7 @@ import AboutContent from "./AboutContent/AboutContent";
 
 const AboutSection = (props) => {
   return (
-    <div className="mt-24" id="about">
+    <div className="mt-24 sm:mt-20" id="about">
       <AboutHeading vietnamese={props.vietnamese} />
       <AboutContent vietnamese={props.vietnamese} />
     </div>

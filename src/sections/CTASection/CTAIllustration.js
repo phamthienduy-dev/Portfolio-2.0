@@ -44,16 +44,16 @@ const CTAIllustrationTop = (props) => {
   };
 
   return (
-    <div className=" mt-56 md:mt-36 lg:mt-44 flex-col h-cta lg:h-296 md:h-248 mx-2">
-      <div className="relative flex justify-center w-3/5 xl:w-7/12 mx-auto">
+    <div className=" mt-56 md:mt-36 lg:mt-44 flex-col h-cta lg:h-296 md:h-248 sm:h-228 sxm:h-200 mx-2">
+      <div className="relative flex justify-center w-3/5 xl:w-7/12 sm:w-2/3 mx-auto">
         <div className="absolute flex gap-5 top-41% left-39% w-full ">
           <button
             onClick={() => props.setShowModal(true)}
-            className="md:text-sm bg-secondary-200 font-bold text-white py-5  lg:py-4 w-19.7% md:rounded-lg  rounded-xl hover:bg-secondary-100 transition duration-300"
+            className="md:text-sm sm:text-xs bg-secondary-200 font-bold text-white py-5  lg:py-4 sm:py-3   w-19.7% md:rounded-lg  rounded-xl hover:bg-secondary-100 transition duration-300"
           >
             {vietnamese ? "ĐÁNH GIÁ" : "REVIEW"}
           </button>
-          <button className="md:text-sm bg-primary-200 font-bold text-white py-5 lg:py-4 w-19.7% md:rounded-lg rounded-xl hover:bg-primary-100 transition duration-300 cursor-not-allowed">
+          <button className="md:text-sm sm:text-xs bg-primary-200 font-bold text-white py-5 lg:py-4 sm:py-3  w-19.7% md:rounded-lg rounded-xl hover:bg-primary-100 transition duration-300 cursor-not-allowed">
             {vietnamese ? "LIÊN HỆ" : "CONTACT"}
           </button>
         </div>
@@ -61,7 +61,7 @@ const CTAIllustrationTop = (props) => {
       </div>
       <div className="relative">
         <div className="absolute grid grid-cols-5 container bg-blue-400 w-full bg-gradient-to-b from-secondary-300 to-primary-300 rounded-xl z-10">
-          <div className="col-start-1 col-span-3 py-28 pl-28 md:py-20 md:pl-20 lg:py-20 lg:pl-16 xl:pl-20 xl:py-24">
+          <div className="col-start-1 col-span-3 py-28 pl-28 sxm:py-14 sxm:pl-14 sm:py-16 sm:pl-16 md:py-20 md:pl-20 lg:py-20 lg:pl-16 xl:pl-20 xl:py-24">
             <h1 className="text-white dark:text-gray-800 text-5xl md:text-3xl font-semibold col leading-normal">
               {vietnamese
                 ? "Để lại email và mình sẽ liên hệ ngay nhé!"
@@ -80,11 +80,11 @@ const CTAIllustrationTop = (props) => {
                 id="email"
                 placeholder="yourname@email.com"
                 required
-                className="dark:bg-gray-800 dark:text-gray-200 w-full px-3 border-none focus:ring-2 focus:ring-blue-600 focus:outline-none"
+                className="dark:bg-gray-800 dark:text-gray-200 w-full px-3 md:px-2 sm:text-xs border-none focus:ring-2 focus:ring-blue-600 focus:outline-none"
               />
               <button
                 type="submit"
-                className="bg-gradient-to-r rounded-sm from-secondary-200 to-primary-200 hover:shadow-lg text-white font-semibold py-2 px-8 text-sm border-none"
+                className="bg-gradient-to-r rounded-sm from-secondary-200 to-primary-200 hover:shadow-lg text-white font-semibold py-2 px-8 text-sm border-none md:text-xs md:px-6"
               >
                 {vietnamese ? "Gửi" : "SUBMIT"}
               </button>

@@ -1,14 +1,13 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 
-import { BiSun, BiMoon, BiMenu } from "react-icons/bi";
-import { AiOutlineClose } from "react-icons/ai";
+import { BiSun, BiMoon, BiUser, BiGridAlt } from "react-icons/bi";
+
 import { ThemeContext } from "../../context/theme-context";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { motion } from "framer-motion";
 
 const NavBar = React.forwardRef((props, ref) => {
   const { theme, setTheme } = useContext(ThemeContext);
-  const [mobileNav, setMobileNav] = useState(false);
 
   const vietnamese = props.vietnamese;
   const inView = props.inView;
@@ -21,114 +20,129 @@ const NavBar = React.forwardRef((props, ref) => {
     props.setVietnamese((prevState) => !prevState);
   };
 
-  const mobileNavHandler = () => {
-    setMobileNav((prevState) => !prevState);
-  };
-
   return (
-    <div
-      ref={ref}
-      id="nav"
-      className={`transition-all sticky top-0 z-50 ${
-        !inView ? "w-full bg-white dark:bg-gray-900 shadow-lg" : ""
-      }`}
-    >
-      <div className="container">
-        <div
-          className={`mx-2 grid grid-cols-2 text-gray-500 dark:text-gray-400   font-bold py-4 px-5 rounded-tl-2xl rounded-tr-2xl  ${
-            !inView
-              ? "bg-white dark:bg-gray-900"
-              : "bg-gray-50 dark:bg-gray-800"
-          }`}
-        >
+    <>
+      <div
+        ref={ref}
+        id="nav"
+        className={`transition-all sticky top-0 z-50 ${
+          !inView ? "w-full bg-white dark:bg-gray-900 shadow-lg " : ""
+        }`}
+      >
+        <div className="container">
           <div
-            className="text-4xl lg:text-3xl flex  font-extrabold justify-self-start"
-            onClick={() => scroll.scrollToTop()}
+            className={`mx-2 grid grid-cols-2 text-gray-500 dark:text-gray-400   font-bold py-4 px-5 rounded-tl-2xl rounded-tr-2xl  ${
+              !inView
+                ? "bg-white dark:bg-gray-900"
+                : "bg-gray-50 dark:bg-gray-800"
+            }`}
           >
-            <a href="#">
-              <span className="text-primary-200">DUY</span>
-              <span className="text-secondary-200">FE</span>
-            </a>
-          </div>
-          <nav className="md:flex self-center justify-end text-4xl 2xl:hidden 1xl:hidden xl:hidden lg:hidden">
-            <div onClick={mobileNavHandler}>
-              {!mobileNav ? <BiMenu /> : <AiOutlineClose />}
-            </div>
-          </nav>
-          <nav className="text-sm lg:text-xs flex self-center gap-12 lg:gap-8 justify-self-end md:hidden">
-            <div className="flex justify-self-end gap-12 self-center lg:gap-8">
-              <Link
-                to="about"
-                smooth={true}
-                offset={-120}
-                duration={500}
-                className="hover:text-gray-900 transition duration-300 self-center dark:hover:text-gray-200 cursor-pointer"
-              >
-                {vietnamese ? "GIỚI THIỆU" : "ABOUT"}
-              </Link>
-              <Link
-                to="project"
-                smooth={true}
-                offset={-120}
-                duration={500}
-                className="hover:text-gray-900 transition duration-300 self-center dark:hover:text-gray-200 cursor-pointer"
-              >
-                {vietnamese ? "DỰ ÁN" : "PROJECTS"}
-              </Link>
-
-              <div className="self-center ">
-                <a
-                  href="#"
-                  className={vietnamese && langueNotActive}
-                  onClick={languageChangeHandler}
-                >
-                  EN
-                </a>{" "}
-                |{" "}
-                <a
-                  href="#"
-                  className={!vietnamese && langueNotActive}
-                  onClick={languageChangeHandler}
-                >
-                  VN
-                </a>
-              </div>
-              <a
-                href="#"
-                className="self-center transition duration-500 ease-in-out"
-              >
-                {theme === "dark" ? (
-                  <BiSun
-                    className="h-6 w-6 lg:h-4 lg:w-4"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      setTheme(theme === "dark" ? "light" : "dark");
-                    }}
-                  />
-                ) : (
-                  <BiMoon
-                    className="h-6 w-6 lg:h-4 lg:w-4"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      setTheme(theme === "light" ? "dark" : "light");
-                    }}
-                  />
-                )}
+            <div
+              className="text-4xl lg:text-3xl sm:text-2xl flex  font-extrabold justify-self-start"
+              onClick={() => scroll.scrollToTop()}
+            >
+              <a href="#">
+                <span className="text-primary-200">DUY</span>
+                <span className="text-secondary-200">FE</span>
               </a>
-              <motion.a
-                className="bg-gradient-to-r from-secondary-200 to-primary-200 hover:shadow-lg dark:hover:bg-red-200 transition duration-300 text-white font-semibold py-2 px-6 rounded-md text-sm lg:text-xs lg:px-4 lg:py-1 lg:rounded"
-                href="https://drive.google.com/file/d/1d3BCopD0BKiI7Wz4-xsmSHWynOhw82-r/view?usp=sharing"
-                target="_blank"
-                whileHover={{ scale: 1.04 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                RESUME
-              </motion.a>
             </div>
-          </nav>
+
+            <nav className="text-sm lg:text-xs flex self-center gap-12 lg:gap-8 justify-self-end ">
+              <div className="flex justify-self-end gap-12 self-center lg:gap-8 sm:gap-6">
+                <Link
+                  to="about"
+                  smooth={true}
+                  offset={-120}
+                  duration={500}
+                  className="hover:text-gray-900 transition duration-300 self-center dark:hover:text-gray-200 cursor-pointer md:hidden"
+                >
+                  {vietnamese ? "GIỚI THIỆU" : "ABOUT"}
+                </Link>
+                <Link
+                  to="about"
+                  smooth={true}
+                  offset={-120}
+                  duration={500}
+                  className="hover:text-gray-900 transition duration-300 self-center dark:hover:text-gray-200 cursor-pointer text-xl md:flex 2xl:hidden xl:hidden lg:hidden "
+                >
+                  <BiUser />
+                </Link>
+                <Link
+                  to="project"
+                  smooth={true}
+                  offset={-120}
+                  duration={500}
+                  className="hover:text-gray-900 transition duration-300 self-center dark:hover:text-gray-200  cursor-pointer md:hidden"
+                >
+                  {vietnamese ? "DỰ ÁN" : "PROJECTS"}
+                </Link>
+                <Link
+                  to="project"
+                  smooth={true}
+                  offset={-120}
+                  duration={500}
+                  className="hover:text-gray-900 transition duration-300 self-center dark:hover:text-gray-200 cursor-pointer text-xl md:flex 2xl:hidden xl:hidden lg:hidden "
+                >
+                  <BiGridAlt />
+                </Link>
+
+                <div className="self-center md:hidden">
+                  <a
+                    href="#"
+                    className={vietnamese && langueNotActive}
+                    onClick={languageChangeHandler}
+                  >
+                    EN
+                  </a>{" "}
+                  |{" "}
+                  <a
+                    href="#"
+                    className={!vietnamese && langueNotActive}
+                    onClick={languageChangeHandler}
+                  >
+                    VN
+                  </a>
+                </div>
+                <div className="2xl:hidden xl:hidden lg:hidden md:flex">
+                  <a onClick={languageChangeHandler} className="self-center">
+                    {vietnamese ? "EN" : "VN"}
+                  </a>
+                </div>
+                <a
+                  href="#"
+                  className="self-center transition duration-500 ease-in-out text-xl "
+                >
+                  {theme === "dark" ? (
+                    <BiSun
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setTheme(theme === "dark" ? "light" : "dark");
+                      }}
+                    />
+                  ) : (
+                    <BiMoon
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setTheme(theme === "light" ? "dark" : "light");
+                      }}
+                    />
+                  )}
+                </a>
+                <motion.a
+                  className="bg-gradient-to-r from-secondary-200 to-primary-200 hover:shadow-lg dark:hover:bg-red-200 transition duration-300 text-white font-semibold py-2 px-6 rounded-md text-sm lg:text-xs lg:px-5 lg:py-2 lg:rounded"
+                  href="https://drive.google.com/file/d/1d3BCopD0BKiI7Wz4-xsmSHWynOhw82-r/view?usp=sharing"
+                  target="_blank"
+                  whileHover={{ scale: 1.04 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  RESUME
+                </motion.a>
+              </div>
+            </nav>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 });
 

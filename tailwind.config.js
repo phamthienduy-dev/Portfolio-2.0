@@ -10,6 +10,8 @@ module.exports = {
       xl: { max: "1280px" },
       lg: { max: "1140px" },
       md: { max: "996px" },
+      sm: { max: "870px" },
+      sxm: { max: "762px" },
     },
     extend: {
       linearBorderGradients: {
@@ -121,12 +123,14 @@ module.exports = {
         58.8: "14.7rem",
         296: "74rem",
         248: "62rem",
+        228: "57rem",
+        200: "50rem",
       },
       boxShadow: {
         nav: "0 16px 44px rgba(0,0,0,0.08)",
       },
-      margin: {
-        12.8: "3.2rem",
+      fontSize: {
+        sxs: ".5rem",
       },
     },
   },
