@@ -10,20 +10,20 @@ const Footer = (props) => {
   const year = new Date().getFullYear();
 
   return (
-    <div className="mt-12 xl:mt-0 lg:mt-0 md:mt-0 container grid grid-cols-4 sxm:grid-cols-3  pb-9 px-11">
+    <div className="mt-12 xl:mt-0 lg:mt-0 md:mt-0 container grid grid-cols-4 sxm:grid-cols-3  pb-9 px-11 sphone:px-5 ">
       <div>
         <a
-          className="text-4xl lg:text-3xl sm:text-2xl flex font-extrabold cursor-pointer pl-9"
+          className="text-4xl lg:text-3xl sm:text-2xl sphone:text-xl flex font-extrabold cursor-pointer pl-9"
           onClick={() => scroll.scrollToTop()}
         >
           <div className="text-primary-200">DUY</div>
           <div className="text-secondary-200">FE</div>
         </a>
-        <div className="pl-9 dark:text-gray-200 text-sm lg:text-sm sm:text-xs sxm:text-sxs xl:hidden lg:hidden 1xl:hidden 2xl:hidden md:hidden sm:hidden ">{`Copyright © ${year} by Pham Thien Duy. All rights reserved.`}</div>
+        <div className="pl-9 dark:text-gray-200 text-sm lg:text-sm sm:text-xs sxm:text-sxs xl:hidden lg:hidden 1xl:hidden 2xl:hidden md:hidden sm:hidden sxm:block ">{`Copyright © ${year} by Pham Thien Duy. All rights reserved.`}</div>
       </div>
 
       <div>
-        <ul className="flex flex-col gap-4 text-gray-500 font-semibold pl-9 lg:text-sm sm:text-xs">
+        <ul className="flex flex-col gap-4 sphone:gap-2 text-gray-500 font-semibold pl-9 lg:text-sm sm:text-xs sphone:text-sxs">
           <li className="hover:text-gray-800 dark:hover:text-gray-200 transition duration-300">
             <Link
               to="about"
@@ -59,7 +59,7 @@ const Footer = (props) => {
       </div>
       <div>
         <div>
-          <address className="flex flex-col gap-4 text-gray-600 dark:text-gray-500 lg:text-sm sm:text-xs">
+          <address className="flex flex-col gap-4 sphone:gap-2 text-gray-600 dark:text-gray-500 lg:text-sm sm:text-xs sphone:text-sxs">
             <p className="not-italic font-semibold">
               {vietnamese ? "Liên lạc" : "Contact"}
             </p>

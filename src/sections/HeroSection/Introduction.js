@@ -11,12 +11,12 @@ const Introduction = (props) => {
   const vietnamese = props.vietnamese;
 
   return (
-    <div className="mx-2 pt-10 lg:pt-6 bg-gray-50 rounded-bl-2xl rounded-br-2xl  px-2   dark:bg-gray-800">
+    <div className="mx-2 pt-10 lg:pt-6 sphone:pt-4 bg-gray-50 rounded-bl-2xl rounded-br-2xl  px-2   dark:bg-gray-800">
       <div className="text-center">
-        <div className="text-gray-400 font-light mb-1 dark:text-gray-200 sm:text-sm">
+        <div className="text-gray-400 font-light mb-1 dark:text-gray-200 sm:text-sm sphone:text-xs sphone:mb-0">
           {vietnamese ? "Xin chào! Mình là" : "Hi! I am"}
         </div>
-        <p className="text-5xl lg:text-4xl sm:text-2xl mb-5 font-semibold">
+        <p className="text-5xl lg:text-4xl sm:text-2xl mb-5 sm:mb-3 sphone:mb-2 font-semibold sphone:text-xl">
           <span className="text-primary-200">
             {vietnamese ? "Phạm " : "Pham "}
           </span>

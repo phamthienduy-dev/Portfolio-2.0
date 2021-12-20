@@ -13,30 +13,12 @@ import { GiSkills as Skill } from "react-icons/gi";
 import ManWorking from "../../../assets/SVG/Asset1.svg";
 
 const AboutIllustration = (props) => {
-  // const { theme } = useContext(ThemeContext);
-  // const vietnamese = props.vietnamese;
-
-  // const renderVector = () => {
-  //   if (theme === "dark" && vietnamese) {
-  //     return <img src={ManSittingVietnameseDark} alt="About Vector Dark" />;
-  //   }
-  //   if (theme === "dark" && !vietnamese) {
-  //     return <img src={ManSittingEnglishDark} alt="About Vector Dark" />;
-  //   }
-  //   if (theme === "light" && vietnamese) {
-  //     return <img src={ManSittingVietnamese} alt="About Vector" />;
-  //   }
-  //   if (theme === "light" && !vietnamese) {
-  //     return <img src={ManSittingEnglish} alt="About Vector" />;
-  //   }
-  // };
-
   const GridItem = (props) => {
     return (
       <div
         className={`${
           props.className ? props.className : ""
-        } lg:text-6xl  sm:text-5xl text-7xl dark:bg-gray-900 bg-gray-100 text-gray-600 px-5 py-7 md:py-7 md:px-3 text-center dark:text-gray-200 rounded-xl flex justify-center`}
+        } lg:text-6xl  sm:text-5xl sphone:text-6xl text-7xl dark:bg-gray-900 bg-gray-100 text-gray-600 px-5 py-7 md:py-7 md:px-3 text-center dark:text-gray-200 rounded-xl flex justify-center`}
       >
         {props.children}
       </div>
@@ -44,19 +26,19 @@ const AboutIllustration = (props) => {
   };
 
   return (
-    <div className="flex-grow sm:mx-auto">
-      <div className="grid grid-cols-5 grid-rows-5 md:grid-cols-3 sxm:grid-cols-2  gap-7 sm:gap-5 xl:gap-6 ">
-        <GridItem className="text-center">
+    <div className="flex-grow sphone:w-94% sphone:mx-auto">
+      <div className="grid grid-cols-5 grid-rows-5 md:grid-cols-3 sxm:grid-cols-2 sphone:grid-rows-4  gap-7 sm:gap-5 xl:gap-6 ">
+        <GridItem className="text-center ">
           <Skill />
         </GridItem>
-        <GridItem className="row-start-2 hover:shadow-lg hover:-translate-y-0.5 transform transition">
+        <GridItem className="row-start-2 hover:shadow-lg hover:-translate-y-0.5 transform transition sphone:row-start-1 sphone:col-start-2">
           <HTML />
         </GridItem>
         <GridItem className="row-start-2 sxm:hidden"></GridItem>
-        <GridItem className="row-start-3 hover:shadow-lg hover:-translate-y-0.5 transform transition">
+        <GridItem className="row-start-3 hover:shadow-lg hover:-translate-y-0.5 transform transition sphone:row-start-2">
           <CSS />
         </GridItem>
-        <GridItem className="row-start-3 hover:shadow-lg hover:-translate-y-0.5 transform transition">
+        <GridItem className="row-start-3 hover:shadow-lg hover:-translate-y-0.5 transform transition sphone:row-start-2">
           <JavaScript />
         </GridItem>
         <div className="row-start-3 relative z-20 sxm:hidden">
@@ -67,20 +49,20 @@ const AboutIllustration = (props) => {
         </div>
 
         <GridItem className="row-start-4 sxm:hidden"></GridItem>
-        <GridItem className="row-start-4 hover:shadow-lg hover:-translate-y-0.5 transform transition">
+        <GridItem className="row-start-4 hover:shadow-lg hover:-translate-y-0.5 transform transition sphone:row-start-3">
           <Redux />
         </GridItem>
         <GridItem className="row-start-4 sxm:hidden"></GridItem>
         <GridItem className="row-start-4 md:hidden"></GridItem>
         <GridItem className="row-start-5 md:hidden"></GridItem>
         <GridItem className="row-start-5 md:hidden"></GridItem>
-        <GridItem className="row-start-5 hover:shadow-lg hover:-translate-y-0.5 transform transition">
+        <GridItem className="row-start-5 hover:shadow-lg hover:-translate-y-0.5 transform transition sphone:row-start-4">
           <Tailwind />
         </GridItem>
-        <GridItem className="row-start-5 hover:shadow-lg hover:-translate-y-0.5 transform transition">
+        <GridItem className="row-start-5 hover:shadow-lg hover:-translate-y-0.5 transform transition sphone:row-start-4">
           <Git />
         </GridItem>
-        <GridItem className="row-start-5 sxm:row-start-4 hover:shadow-lg hover:-translate-y-0.5 transform transition">
+        <GridItem className="row-start-5 sxm:row-start-4 hover:shadow-lg hover:-translate-y-0.5 transform transition sphone:row-start-3">
           <ReactLogo />
         </GridItem>
       </div>

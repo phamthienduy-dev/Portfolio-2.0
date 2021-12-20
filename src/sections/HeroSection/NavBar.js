@@ -38,7 +38,7 @@ const NavBar = React.forwardRef((props, ref) => {
             }`}
           >
             <div
-              className="text-4xl lg:text-3xl sm:text-2xl flex  font-extrabold justify-self-start"
+              className="text-4xl lg:text-3xl sm:text-2xl sphone:text-xl flex  font-extrabold justify-self-start"
               onClick={() => scroll.scrollToTop()}
             >
               <a href="#">
@@ -47,7 +47,7 @@ const NavBar = React.forwardRef((props, ref) => {
               </a>
             </div>
 
-            <nav className="text-sm lg:text-xs flex self-center gap-12 lg:gap-8 justify-self-end ">
+            <nav className="text-sm sm:text-xs lg:text-xs flex self-center gap-12 lg:gap-8 mobile:gap-5 sphone:gap-3 justify-self-end ">
               <div className="flex justify-self-end gap-12 self-center lg:gap-8 sm:gap-6">
                 <Link
                   to="about"
@@ -63,7 +63,7 @@ const NavBar = React.forwardRef((props, ref) => {
                   smooth={true}
                   offset={-120}
                   duration={500}
-                  className="hover:text-gray-900 transition duration-300 self-center dark:hover:text-gray-200 cursor-pointer text-xl md:flex 2xl:hidden xl:hidden lg:hidden "
+                  className="hover:text-gray-900 transition duration-300 self-center dark:hover:text-gray-200 cursor-pointer text-xl sm:text-base sphone:text-sm md:flex 2xl:hidden xl:hidden lg:hidden "
                 >
                   <BiUser />
                 </Link>
@@ -81,7 +81,7 @@ const NavBar = React.forwardRef((props, ref) => {
                   smooth={true}
                   offset={-120}
                   duration={500}
-                  className="hover:text-gray-900 transition duration-300 self-center dark:hover:text-gray-200 cursor-pointer text-xl md:flex 2xl:hidden xl:hidden lg:hidden "
+                  className="hover:text-gray-900 transition duration-300 self-center dark:hover:text-gray-200 cursor-pointer text-xl sm:text-base sphone:text-sm md:flex 2xl:hidden xl:hidden lg:hidden "
                 >
                   <BiGridAlt />
                 </Link>
@@ -110,7 +110,7 @@ const NavBar = React.forwardRef((props, ref) => {
                 </div>
                 <a
                   href="#"
-                  className="self-center transition duration-500 ease-in-out text-xl "
+                  className="self-center transition duration-500 ease-in-out text-xl sm:text-base sphone:text-sm "
                 >
                   {theme === "dark" ? (
                     <BiSun
@@ -129,7 +129,7 @@ const NavBar = React.forwardRef((props, ref) => {
                   )}
                 </a>
                 <motion.a
-                  className="bg-gradient-to-r from-secondary-200 to-primary-200 hover:shadow-lg dark:hover:bg-red-200 transition duration-300 text-white font-semibold py-2 px-6 rounded-md text-sm lg:text-xs lg:px-5 lg:py-2 lg:rounded"
+                  className="bg-gradient-to-r from-secondary-200 to-primary-200 hover:shadow-lg dark:hover:bg-red-200 transition duration-300 text-white font-semibold py-2 px-6 rounded-md md:rounded text-sm lg:text-xs lg:px-4 lg:py-2 sm:px-3 sm:py-1 sm:text-sxs sphone:hidden"
                   href="https://drive.google.com/file/d/1d3BCopD0BKiI7Wz4-xsmSHWynOhw82-r/view?usp=sharing"
                   target="_blank"
                   whileHover={{ scale: 1.04 }}

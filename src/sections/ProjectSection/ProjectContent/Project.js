@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 function Project(props) {
   return (
-    <div className="h-full sxm:w-2/3 sxm:mx-auto border-gradient-b-blue-purple-white border-transparent border-solid border-2 rounded-xl ">
+    <div className="h-full sxm:w-2/3 sphone:w-full sxm:mx-auto border-gradient-b-blue-purple-white border-transparent border-solid border-2 rounded-xl ">
       <div className="p-5 md:p-4 flex gap-5 h-full dark:bg-gray-800 rounded-lg  ">
         <img
           src={props.image}

@@ -12,6 +12,9 @@ module.exports = {
       md: { max: "996px" },
       sm: { max: "870px" },
       sxm: { max: "762px" },
+      mobile: { max: "630px" },
+      phone: { max: "566px" },
+      sphone: { max: "545px" },
     },
     extend: {
       linearBorderGradients: {
@@ -125,6 +128,9 @@ module.exports = {
         248: "62rem",
         228: "57rem",
         200: "50rem",
+        160: "40rem",
+        "94%": "94%",
+        140: "35rem",
       },
       boxShadow: {
         nav: "0 16px 44px rgba(0,0,0,0.08)",

@@ -8,9 +8,9 @@ const AboutCard = (props) => {
   const vietnamese = props.vietnamese;
 
   return (
-    <div className="relative w-1/3 md:w-5/12 sm:w-2/5 sxm:w-1/2 bg-white shadow-lg px-3 py-1 rounded-2xl dark:bg-gray-900 sm:mx-auto">
+    <div className="relative w-1/3 md:w-5/12 sm:w-2/5 sxm:w-1/2 sphone:w-94%  bg-white shadow-lg px-3 py-1 rounded-2xl dark:bg-gray-900 sm:mx-auto">
       <img src={ProfilePic} className="inline-block" />
-      <div className="mt-8 text-center text-gray-600 font-semibold text-xl sm:text-lg  dark:text-gray-200">
+      <div className="mt-8 text-center text-gray-600 font-semibold text-xl sm:text-lg  mobile:text-base dark:text-gray-200">
         <p>
           {vietnamese ? "Xin chào! Mình là " : "Hi! My name is "}
           <span className="text-primary-100">
@@ -26,13 +26,13 @@ const AboutCard = (props) => {
       </div>
 
       <blockquote className="mt-9 relative p-3 ">
-        <span className="absolute  text-7xl lg:text-6xl text-gray-300 flex">
+        <span className="absolute  text-7xl lg:text-6xl mobile:text-4xl text-gray-300 flex">
           “
         </span>
-        <span className="absolute text-7xl lg:text-6xl right-3 bottom-4 items-end transform rotate-180 text-gray-300">
+        <span className="absolute text-7xl lg:text-6xl mobile:text-4xl right-3 bottom-4 sphone:bottom-16 items-end transform rotate-180 text-gray-300">
           “
         </span>
-        <p className="p-8  lg:text-base sm:text-sm text-lg text-gray-600 font-semibold dark:text-gray-200">
+        <p className="p-8 sm:p-7 mobile:p-6 lg:text-base sm:text-sm text-lg mobile:text-xs sphone:text-sm sphone:h-44 text-gray-600 font-semibold dark:text-gray-200">
           {vietnamese ? "Mình thích " : "I love "}
           <span className="text-primary-100">
             {vietnamese ? "thiết kế " : "designing "}
