@@ -15,6 +15,7 @@ module.exports = {
       mobile: { max: "630px" },
       phone: { max: "566px" },
       sphone: { max: "545px" },
+      sxphone: { max: "450px" },
     },
     extend: {
       linearBorderGradients: {

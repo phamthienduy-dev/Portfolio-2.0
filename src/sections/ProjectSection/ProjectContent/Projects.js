@@ -16,7 +16,7 @@ const Projects = (props) => {
 
   return (
     <div className="container">
-      <div className="mx-2 md:mx-1 grid sxm:grid-cols-1   grid-cols-2 grid-rows-2 mt-8 gap-24 md:gap-5 xl:gap-12">
+      <div className="mx-2 sphone:mt-6 md:mx-1 grid sxm:grid-cols-1   grid-cols-2 grid-rows-2 mt-8 gap-24 md:gap-5 xl:gap-12">
         <div>
           <Project
             image={OMNIFOODPic}

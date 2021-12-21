@@ -26,7 +26,7 @@ const AboutIllustration = (props) => {
   };
 
   return (
-    <div className="flex-grow sphone:w-94% sphone:mx-auto">
+    <div className="flex-grow sphone:w-3/4 sphone:mx-auto sxphone:w-full">
       <div className="grid grid-cols-5 grid-rows-5 md:grid-cols-3 sxm:grid-cols-2 sphone:grid-rows-4  gap-7 sm:gap-5 xl:gap-6 ">
         <GridItem className="text-center ">
           <Skill />

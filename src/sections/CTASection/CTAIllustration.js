@@ -2,8 +2,6 @@ import React from "react";
 
 import { ThemeContext } from "../../context/theme-context";
 
-import CTAIllustration from "../../assets/CTAIllustration.svg";
-import CTAIllustrationDark from "../../assets/CTAIllustrationDark.svg";
 import test from "../../assets/example.svg";
 import { motion } from "framer-motion";
 
@@ -13,10 +11,10 @@ const CTAIllustrationTop = (props) => {
   const vietnamese = props.vietnamese;
 
   return (
-    <div className="mt-56 md:mt-36 lg:mt-44 flex-col mx-10 ">
-      <div className=" grid grid-cols-2 w-4/5 container bg-blue-400  bg-gradient-to-b from-secondary-300 to-primary-300 rounded-xl z-10">
-        <div className="col-start-1 pl-10 py-10 ">
-          <h1 className="text-white dark:text-gray-800 text-5xl md:text-3xl mobile:text-2xl font-semibold col leading-normal">
+    <div className="mt-64 sm:mt-52 lg:mt-56 sphone:mt-24 flex-col mx-10 sphone:mx-0">
+      <div className=" grid grid-cols-2 mobile:grid-cols-1 w-full container bg-blue-400  bg-gradient-to-b from-secondary-300 to-primary-300 rounded-xl z-10">
+        <div className="col-start-1 pl-10 py-10 md:pl-8 md:py-8 sm:pl-6 sm:py-6 sxphone:pl-3 sxphone:py-7">
+          <h1 className="text-gray-200 text-6xl md:text-4xl sphone:text-5xl font-semibold col leading-normal">
             {vietnamese ? "Liên hệ" : "Contact"}
           </h1>
           <form
@@ -29,7 +27,7 @@ const CTAIllustrationTop = (props) => {
             <input type="hidden" name="form-name" value="contact" />
             <div>
               <label
-                className="font-semibold text-xl text-gray-200"
+                className="font-semibold text-xl md:text-base text-gray-200 "
                 htmlFor="name"
               >
                 {vietnamese ? "Tên của bạn" : "Your name"}
@@ -39,13 +37,13 @@ const CTAIllustrationTop = (props) => {
                 placeholder={vietnamese ? "Tên của bạn" : "Your full name"}
                 id="name"
                 name="name"
-                className="w-11/12   p-2 rounded-md mt-1 dark:bg-gray-600 dark:text-gray-200"
+                className="w-11/12  p-3 rounded-md mt-1 dark:bg-gray-900 dark:text-white"
               />
             </div>
 
             <div className="mt-4">
               <label
-                className="font-semibold text-xl text-gray-200"
+                className="font-semibold text-xl md:text-base text-gray-200"
                 htmlFor="email"
               >
                 {vietnamese ? "Email của bạn" : "Your email"}
@@ -55,13 +53,13 @@ const CTAIllustrationTop = (props) => {
                 placeholder={vietnamese ? "Email của bạn" : "Your email"}
                 id="email"
                 name="email"
-                className="w-11/12   p-2 rounded-md mt-1 dark:bg-gray-600 dark:text-gray-200"
+                className="w-11/12  p-3 rounded-md mt-1 dark:bg-gray-900 dark:text-white"
               />
             </div>
 
             <div className="mt-4">
               <label
-                className="font-semibold text-xl text-gray-200"
+                className="font-semibold text-xl md:text-base text-gray-200"
                 htmlFor="message"
               >
                 {vietnamese ? "Lời nhắn" : "Message"}
@@ -71,12 +69,12 @@ const CTAIllustrationTop = (props) => {
                 placeholder={vietnamese ? "Lời nhắn" : "Your message"}
                 id="message"
                 name="message"
-                className="w-11/12 h-56   p-2 rounded-md mt-1 dark:bg-gray-600 dark:text-white"
+                className="w-11/12 h-56 p-3 rounded-md mt-1 dark:bg-gray-900 dark:text-white"
               ></textarea>
             </div>
 
             <motion.button
-              className="mt-8 lg:text-xs shadow-md px-8 py-2 lg:px-3 font-bold hover:shadow-x  transition rounded-md duration-300 bg-gray-50 dark:bg-gray-900 text-gray-600"
+              className="mt-8 lg:text-xs shadow-md px-12 py-2 font-bold hover:shadow-x  transition rounded-md duration-300 bg-gray-50 dark:bg-gray-900 text-gray-600"
               href={`${props.url}`}
               target="_blank"
               whileHover={{ scale: 1.04 }}
@@ -86,7 +84,7 @@ const CTAIllustrationTop = (props) => {
             </motion.button>
           </form>
         </div>
-        <div className="relative my-3">
+        <div className="relative my-3 mobile:hidden">
           <div className="px-3 py-24 flex items-end h-full">
             <img src={test} className="bottom-0" />
           </div>

@@ -8,7 +8,7 @@ const AboutCard = (props) => {
   const vietnamese = props.vietnamese;
 
   return (
-    <div className="relative w-1/3 md:w-5/12 sm:w-2/5 sxm:w-1/2 sphone:w-94%  bg-white shadow-lg px-3 py-1 rounded-2xl dark:bg-gray-900 sm:mx-auto">
+    <div className="relative w-1/3 md:w-5/12 sm:w-2/5 sxm:w-1/2 sphone:w-3/4 sxphone:w-full bg-white shadow-lg px-3 py-1 rounded-2xl dark:bg-gray-900 sm:mx-auto">
       <img src={ProfilePic} className="inline-block" />
       <div className="mt-8 text-center text-gray-600 font-semibold text-xl sm:text-lg  mobile:text-base dark:text-gray-200">
         <p>

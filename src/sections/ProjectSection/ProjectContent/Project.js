@@ -20,10 +20,10 @@ function Project(props) {
             <img src={props.tagTwo} alt={`${props.tagTwo}`} />
             <img src={props.tagThree} alt={`${props.tagThree}`} />
           </div>
-          <p className="mt-4 text-gray-500 dark:text-gray-200 lg:text-sm sm:text-xs">
+          <p className="mt-4 text-gray-500 dark:text-gray-200 lg:text-sm sm:text-xs sxphone:text-sxs">
             {props.description}
           </p>
-          <div className="mt-6 flex gap-6 text-sm text-gray-500  dark:text-gray-200 ">
+          <div className="mt-6 flex gap-6 sxphone:gap-3 text-sm text-gray-500  dark:text-gray-200 ">
             <motion.a
               className="lg:text-xs shadow-md px-4 py-2 lg:px-3 font-bold hover:shadow-x  transition rounded-md duration-300 dark:bg-gray-900"
               href={`${props.url}`}
