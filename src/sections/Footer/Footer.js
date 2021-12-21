@@ -10,7 +10,7 @@ const Footer = (props) => {
   const year = new Date().getFullYear();
 
   return (
-    <div className="mt-12 xl:mt-0 lg:mt-0 md:mt-0 container grid grid-cols-4 sxm:grid-cols-3  pb-9 px-11 sphone:px-5 ">
+    <div className="mt-56 xl:mt-0 lg:mt-0 md:mt-0 container grid grid-cols-4 sxm:grid-cols-3  pb-9 px-11 sphone:px-5 ">
       <div>
         <a
           className="text-4xl lg:text-3xl sm:text-2xl sphone:text-xl flex font-extrabold cursor-pointer pl-9"

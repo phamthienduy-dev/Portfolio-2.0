@@ -63,7 +63,7 @@ const NavBar = React.forwardRef((props, ref) => {
                   smooth={true}
                   offset={-120}
                   duration={500}
-                  className="hover:text-gray-900 transition duration-300 self-center dark:hover:text-gray-200 cursor-pointer text-xl sm:text-base sphone:text-sm md:flex 2xl:hidden xl:hidden lg:hidden "
+                  className="hover:text-gray-900 transition duration-300 self-center dark:hover:text-gray-200 cursor-pointer text-xl sm:text-base sphone:text-sm md:flex 2xl:hidden 1xl:hidden xl:hidden lg:hidden "
                 >
                   <BiUser />
                 </Link>
@@ -81,7 +81,7 @@ const NavBar = React.forwardRef((props, ref) => {
                   smooth={true}
                   offset={-120}
                   duration={500}
-                  className="hover:text-gray-900 transition duration-300 self-center dark:hover:text-gray-200 cursor-pointer text-xl sm:text-base sphone:text-sm md:flex 2xl:hidden xl:hidden lg:hidden "
+                  className="hover:text-gray-900 transition duration-300 self-center dark:hover:text-gray-200 cursor-pointer text-xl sm:text-base sphone:text-sm md:flex 2xl:hidden 1xl:hidden xl:hidden lg:hidden "
                 >
                   <BiGridAlt />
                 </Link>
@@ -103,7 +103,7 @@ const NavBar = React.forwardRef((props, ref) => {
                     VN
                   </a>
                 </div>
-                <div className="2xl:hidden xl:hidden lg:hidden md:flex">
+                <div className="2xl:hidden 1xl:hidden xl:hidden lg:hidden md:flex">
                   <a onClick={languageChangeHandler} className="self-center">
                     {vietnamese ? "EN" : "VN"}
                   </a>
