@@ -1,7 +1,6 @@
 import React from "react";
 
 import ProfilePic from "../../../assets/ProfilePic.png";
-import PrimaryButton from "../../../UI/ButtonPrimary";
 import { motion } from "framer-motion";
 
 const AboutCard = (props) => {
@@ -9,7 +8,7 @@ const AboutCard = (props) => {
 
   return (
     <div className="relative w-1/3 md:w-5/12 sm:w-2/5 sxm:w-1/2 sphone:w-3/4 sxphone:w-full bg-white shadow-lg px-3 py-1 rounded-2xl dark:bg-gray-900 sm:mx-auto">
-      <img src={ProfilePic} className="inline-block" />
+      <img src={ProfilePic} className="inline-block" alt="Profile" />
       <div className="mt-8 text-center text-gray-600 font-semibold text-xl sm:text-lg  mobile:text-base dark:text-gray-200">
         <p>
           {vietnamese ? "Xin chào! Mình là " : "Hi! My name is "}
@@ -49,6 +48,8 @@ const AboutCard = (props) => {
 
       <a className="absolute bottom-1 right-1 xl:mt-12.8 mt-20 mb-4 pr-3 flex w-full justify-end">
         <motion.a
+          href="https://drive.google.com/file/d/1d3BCopD0BKiI7Wz4-xsmSHWynOhw82-r/view?usp=sharing"
+          rel="noopener noreferrer"
           className="sm:text-xs text-sm shadow-md  px-4 py-2 font-bold text-gray-600 bg-gray-50 hover:shadow-x dark:text-gray-200  transition rounded-md duration-300 dark:bg-gray-800"
           href={`${props.url}`}
           target="_blank"

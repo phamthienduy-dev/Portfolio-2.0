@@ -1,5 +1,4 @@
-import React, { useContext } from "react";
-import { ThemeContext } from "../../../context/theme-context";
+import React from "react";
 
 import { SiHtml5 as HTML } from "react-icons/si";
 import { SiCss3 as CSS } from "react-icons/si";
@@ -45,6 +44,7 @@ const AboutIllustration = (props) => {
           <img
             src={ManWorking}
             className="absolute lg:-top-3 md:-top-14 -top-7"
+            alt="Man Working Vector"
           />
         </div>
 

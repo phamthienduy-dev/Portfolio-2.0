@@ -129,6 +129,7 @@ const NavBar = React.forwardRef((props, ref) => {
                   )}
                 </a>
                 <motion.a
+                  rel="noopener noreferrer"
                   className="bg-gradient-to-r from-secondary-200 to-primary-200 hover:shadow-lg dark:hover:bg-red-200 transition duration-300 text-white font-semibold py-2 px-6 rounded-md md:rounded text-sm lg:text-xs lg:px-4 lg:py-2 sm:px-3 sm:py-1 sm:text-sxs sphone:hidden"
                   href="https://drive.google.com/file/d/1d3BCopD0BKiI7Wz4-xsmSHWynOhw82-r/view?usp=sharing"
                   target="_blank"

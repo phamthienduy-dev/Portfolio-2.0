@@ -1,29 +1,24 @@
 import { Link, animateScroll as scroll } from "react-scroll";
 
-import facebook from "../../assets/facebook.svg";
-import github from "../../assets/github.svg";
-import linkedin from "../../assets/linkedin.svg";
-import twitter from "../../assets/twitter.svg";
-
 const Footer = (props) => {
   const vietnamese = props.vietnamese;
   const year = new Date().getFullYear();
 
   return (
-    <div className="mt-40 lg:mt-32 sphone:mt-20 container grid grid-cols-4 sxm:grid-cols-3  pb-9 px-11 sphone:px-5 ">
+    <div className="mt-40 lg:mt-32 sphone:mt-20 container grid grid-cols-4 sxm:grid-cols-3  pb-9 px-11 sphone:px-5 mobile:grid-cols-2 mobile:grid-rows-2 mobile:gap-y-5 ">
       <div>
         <a
-          className="text-4xl lg:text-3xl sm:text-2xl sphone:text-xl flex font-extrabold cursor-pointer pl-9"
+          className="text-4xl lg:text-3xl sm:text-2xl sphone:text-2xl flex font-extrabold cursor-pointer pl-9"
           onClick={() => scroll.scrollToTop()}
         >
           <div className="text-primary-200">DUY</div>
           <div className="text-secondary-200">FE</div>
         </a>
-        <div className="pl-9 dark:text-gray-200 text-sm lg:text-sm sm:text-xs sxm:text-sxs xl:hidden lg:hidden 1xl:hidden 2xl:hidden md:hidden sm:hidden sxm:block ">{`Copyright © ${year} by Pham Thien Duy. All rights reserved.`}</div>
+        <div className="pl-9 dark:text-gray-200 text-sm lg:text-sm sm:text-xs sxm:text-sxs xl:hidden lg:hidden 1xl:hidden 2xl:hidden md:hidden sm:hidden sxm:block mobile:hidden">{`Copyright © ${year} by Pham Thien Duy. All rights reserved.`}</div>
       </div>
 
       <div>
-        <ul className="flex flex-col gap-4 sphone:gap-2 text-gray-500 font-semibold pl-9 lg:text-sm sm:text-xs sphone:text-sxs">
+        <ul className="flex flex-col gap-4 sphone:gap-2 text-gray-500 font-semibold pl-9 lg:text-sm sm:text-xs sphone:text-xs">
           <li className="hover:text-gray-800 dark:hover:text-gray-200 transition duration-300">
             <Link
               to="about"
@@ -49,6 +44,7 @@ const Footer = (props) => {
           </li>
           <li className="hover:text-gray-800 transition duration-300 dark:hover:text-gray-200 ">
             <a
+              rel="noopener noreferrer"
               href="https://drive.google.com/file/d/1d3BCopD0BKiI7Wz4-xsmSHWynOhw82-r/view?usp=sharing"
               target="_blank"
             >
@@ -57,9 +53,9 @@ const Footer = (props) => {
           </li>
         </ul>
       </div>
-      <div>
+      <div className="mobile:pl-9">
         <div>
-          <address className="flex flex-col gap-4 sphone:gap-2 text-gray-600 dark:text-gray-500 lg:text-sm sm:text-xs sphone:text-sxs">
+          <address className="flex flex-col gap-4 sphone:gap-2 text-gray-600 dark:text-gray-500 lg:text-sm sm:text-xs sphone:text-xs">
             <p className="not-italic font-semibold">
               {vietnamese ? "Liên lạc" : "Contact"}
             </p>
@@ -78,7 +74,7 @@ const Footer = (props) => {
           </address>
         </div>
       </div>
-      <div className="sxm:hidden dark:text-gray-200 text-sm lg:text-sm sm:text-xs ">{`Copyright © ${year} by Pham Thien Duy. All rights reserved.`}</div>
+      <div className="sxm:hidden mobile:block mobile:pl-9 dark:text-gray-200 text-sm lg:text-sm sm:text-xs ">{`Copyright © ${year} by Pham Thien Duy. All rights reserved.`}</div>
     </div>
   );
 };

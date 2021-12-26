@@ -1,9 +1,11 @@
 import React, { useContext } from "react";
 
+import { Link, animateScroll as scroll } from "react-scroll";
+
 import ButtonPrimary from "../../UI/ButtonPrimary";
 import heroVectorLight from "../../assets/heroVectorLight.svg";
 import heroVectorDark from "../../assets/heroVectorDark.svg";
-import SocialMediaIcons from "./SocialMediaIcons";
+
 import { ThemeContext } from "../../context/theme-context";
 
 const Introduction = (props) => {
@@ -25,7 +27,9 @@ const Introduction = (props) => {
           </span>
           <span className="text-primary-200">Duy</span>
         </p>
-        <ButtonPrimary name={vietnamese ? "LIÊN HỆ" : "CONTACT"} />
+        <Link to="cta" smooth={true} offset={-120} duration={500}>
+          <ButtonPrimary name={vietnamese ? "LIÊN HỆ" : "CONTACT"} />
+        </Link>
       </div>
       <div className="relative w-full">
         {theme === "light" ? (
