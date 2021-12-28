@@ -10,11 +10,12 @@ const Footer = (props) => {
         <a
           className="text-4xl lg:text-3xl sm:text-2xl sphone:text-2xl flex font-extrabold cursor-pointer pl-9"
           onClick={() => scroll.scrollToTop()}
+          href="#"
         >
           <div className="text-primary-200">DUY</div>
           <div className="text-secondary-200">FE</div>
         </a>
-        <div className="pl-9 dark:text-gray-200 text-sm lg:text-sm sm:text-xs sxm:text-sxs xl:hidden lg:hidden 1xl:hidden 2xl:hidden md:hidden sm:hidden sxm:block mobile:hidden">{`Copyright © ${year} by Pham Thien Duy. All rights reserved.`}</div>
+        <div className="pl-9 dark:text-gray-200 text-gray-600 text-sm lg:text-sm sm:text-xs sxm:text-sxs xl:hidden lg:hidden 1xl:hidden 2xl:hidden md:hidden sm:hidden sxm:block mobile:hidden">{`Copyright © ${year} by Pham Thien Duy.`}</div>
       </div>
 
       <div>
@@ -37,7 +38,6 @@ const Footer = (props) => {
               offset={-120}
               duration={500}
               href="#"
-              href="#"
             >
               {vietnamese ? "Dự án" : "Projects"}
             </Link>
@@ -45,7 +45,7 @@ const Footer = (props) => {
           <li className="hover:text-gray-800 transition duration-300 dark:hover:text-gray-200 ">
             <a
               rel="noopener noreferrer"
-              href="https://drive.google.com/file/d/1d3BCopD0BKiI7Wz4-xsmSHWynOhw82-r/view?usp=sharing"
+              href="https://drive.google.com/file/d/12sb3J2oMhM5fww1Mp8AUYLNDUYt9UWA3/view?usp=sharing"
               target="_blank"
             >
               Resume
@@ -74,7 +74,7 @@ const Footer = (props) => {
           </address>
         </div>
       </div>
-      <div className="sxm:hidden mobile:block mobile:pl-9 dark:text-gray-200 text-sm lg:text-sm sm:text-xs ">{`Copyright © ${year} by Pham Thien Duy. All rights reserved.`}</div>
+      <div className="sxm:hidden mobile:block mobile:pl-9 dark:text-gray-200 text-gray-600 text-sm lg:text-sm sm:text-xs ">{`Copyright © ${year} by Pham Thien Duy.`}</div>
     </div>
   );
 };

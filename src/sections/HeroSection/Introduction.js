@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 import ButtonPrimary from "../../UI/ButtonPrimary";
 import heroVectorLight from "../../assets/heroVectorLight.svg";
@@ -9,7 +9,7 @@ import heroVectorDark from "../../assets/heroVectorDark.svg";
 import { ThemeContext } from "../../context/theme-context";
 
 const Introduction = (props) => {
-  const { theme, setTheme } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
   const vietnamese = props.vietnamese;
 
   return (
