@@ -27,7 +27,7 @@ const SocialMediaIcons = () => {
           rel="noopener noreferrer"
           href="https://www.facebook.com/phamthienduy181"
           target="_blank"
-          className="hover:shadow-lg hover:-translate-y-0.5 transform transition p-2 rounded-lg h-9 w-9 sm:h-7 sm:w-7 bg-gray-100 dark:bg-transparent self-center flex"
+          className="hover:shadow-lg hover:-translate-y-0.5 transform transition p-2 rounded-lg h-9 w-9 sm:h-7 sm:w-7 bg-gray-100 dark:bg-gray-800 self-center flex"
         >
           <img src={facebook} alt="Facebook Icon" />
         </a>
