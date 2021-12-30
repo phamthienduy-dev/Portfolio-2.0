@@ -7,6 +7,7 @@ import { SiReact as ReactLogo } from "react-icons/si";
 import { SiTailwindcss as Tailwind } from "react-icons/si";
 import { SiRedux as Redux } from "react-icons/si";
 import { SiGit as Git } from "react-icons/si";
+import { AiFillCode } from "react-icons/ai";
 
 import { GiSkills as Skill } from "react-icons/gi";
 import ManWorking from "../../../assets/SVG/Asset1.svg";
@@ -28,7 +29,7 @@ const AboutIllustration = (props) => {
     <div className="flex-grow sphone:w-3/4 sphone:mx-auto sxphone:w-full">
       <div className="grid grid-cols-5 grid-rows-5 md:grid-cols-3 sxm:grid-cols-2 sphone:grid-rows-4  gap-7 sm:gap-5 xl:gap-6 ">
         <GridItem className="text-center ">
-          <Skill />
+          <AiFillCode />
         </GridItem>
         <GridItem className="row-start-2 hover:shadow-lg hover:-translate-y-0.5 transform transition sphone:row-start-1 sphone:col-start-2">
           <HTML />
@@ -40,13 +41,7 @@ const AboutIllustration = (props) => {
         <GridItem className="row-start-3 hover:shadow-lg hover:-translate-y-0.5 transform transition sphone:row-start-2">
           <JavaScript />
         </GridItem>
-        <div className="row-start-3 relative z-20 sxm:hidden">
-          <img
-            src={ManWorking}
-            className="absolute lg:-top-3 md:-top-14 -top-7"
-            alt="Man Working Vector"
-          />
-        </div>
+        <GridItem className="row-start-3 sxm:hidden"></GridItem>
 
         <GridItem className="row-start-4 sxm:hidden"></GridItem>
         <GridItem className="row-start-4 hover:shadow-lg hover:-translate-y-0.5 transform transition sphone:row-start-3">

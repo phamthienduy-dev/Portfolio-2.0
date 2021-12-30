@@ -4,6 +4,7 @@ module.exports = {
   purge: ["./public/**/*.html", "./src/**/*.{js,jsx,ts,tsx,vue}"],
   darkMode: "class", // or 'media' or 'class'
   theme: {
+    flex: { "70%": "70%", "40%": "40%", "55%": "55%" },
     screens: {
       "2xl": { min: "1366px" },
       "1xl": { max: "1366px" },

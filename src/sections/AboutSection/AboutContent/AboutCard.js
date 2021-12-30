@@ -50,7 +50,7 @@ const AboutCard = (props) => {
         <motion.a
           href="https://drive.google.com/file/d/12sb3J2oMhM5fww1Mp8AUYLNDUYt9UWA3/view?usp=sharing"
           rel="noopener noreferrer"
-          className="sm:text-xs text-sm shadow-md  px-4 py-2 font-bold text-gray-600 bg-gray-50 hover:shadow-x dark:text-gray-200  transition rounded-md duration-300 dark:bg-gray-800"
+          className="sm:text-xs text-sm shadow-md  px-4 py-3 font-bold text-gray-600 bg-gray-50 hover:shadow-x dark:text-gray-200  transition rounded-md duration-300 dark:bg-gray-800"
           target="_blank"
           whileHover={{ scale: 1.04 }}
           whileTap={{ scale: 0.9 }}
