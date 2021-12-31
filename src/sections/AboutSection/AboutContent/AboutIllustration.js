@@ -1,18 +1,18 @@
 import React from "react";
 
-import { SiHtml5 as HTML } from "react-icons/si";
-import { SiCss3 as CSS } from "react-icons/si";
-import { SiJavascript as JavaScript } from "react-icons/si";
-import { SiReact as ReactLogo } from "react-icons/si";
-import { SiTailwindcss as Tailwind } from "react-icons/si";
-import { SiRedux as Redux } from "react-icons/si";
-import { SiGit as Git } from "react-icons/si";
+import {
+  SiHtml5 as HTML,
+  SiCss3 as CSS,
+  SiJavascript as JavaScript,
+  SiReact as ReactLogo,
+  SiTailwindcss as Tailwind,
+  SiRedux as Redux,
+  SiGit as Git,
+} from "react-icons/si";
+
 import { AiFillCode } from "react-icons/ai";
 
-import { GiSkills as Skill } from "react-icons/gi";
-import ManWorking from "../../../assets/SVG/Asset1.svg";
-
-const AboutIllustration = (props) => {
+const AboutIllustration = () => {
   const GridItem = (props) => {
     return (
       <div

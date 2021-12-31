@@ -46,7 +46,7 @@ const AboutCard = (props) => {
         </p>
       </blockquote>
 
-      <a className="absolute bottom-1 right-1 xl:mt-12.8 mt-20 mb-4 pr-3 flex w-full justify-end">
+      <div className="absolute bottom-1 right-1 xl:mt-12.8 mt-20 mb-4 pr-3 flex w-full justify-end">
         <motion.a
           href="https://drive.google.com/file/d/12sb3J2oMhM5fww1Mp8AUYLNDUYt9UWA3/view?usp=sharing"
           rel="noopener noreferrer"
@@ -57,7 +57,7 @@ const AboutCard = (props) => {
         >
           RESUME
         </motion.a>
-      </a>
+      </div>
     </div>
   );
 };

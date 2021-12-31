@@ -3,15 +3,16 @@ import "./App.css";
 import { useInView } from "react-intersection-observer";
 import ReactModal from "react-modal";
 
-import NavBar from "./sections/HeroSection/NavBar";
+import NavBar from "./components/NavBar";
 import HeroSection from "./sections/HeroSection/HeroSection";
 import AboutSection from "./sections/AboutSection/AboutSection";
 import ProjectSection from "./sections/ProjectSection/ProjectSection";
 import CTASection from "./sections/CTASection/CTASection";
 import Footer from "./sections/Footer/Footer";
-import SocialMediaIcons from "./sections/HeroSection/SocialMediaIcons";
+import SocialMediaIcons from "./components/SocialMediaIcons";
 
 ReactModal.setAppElement("#root");
+
 function App() {
   const [vietnamese, setVietnamese] = useState(true);
   const { ref, inView } = useInView({

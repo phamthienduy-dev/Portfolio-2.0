@@ -1,7 +1,7 @@
 import React from "react";
 
-import test from "../../assets/example.svg";
-import CTAtest from "../../assets/CTAtest.svg";
+import CTAVector from "../../assets/CTAVector.svg";
+
 import { motion } from "framer-motion";
 
 const CTAIllustrationTop = (props) => {
@@ -11,7 +11,7 @@ const CTAIllustrationTop = (props) => {
     <div className="w-11/12 mx-auto">
       <div className="flex w-full  dark:bg-gray-800 bg-gray-50   rounded-xl z-10">
         <div className="m-3 bg-secondary-300 flex-40% py-16 rounded-lg">
-          <img src={CTAtest} />
+          <img src={CTAVector} alt="CTA Vector" />
         </div>
 
         <div className="px-10 py-10 mobile:px-7 mobile:py-7 md:pl-8 md:py-8 sm:pl-6 sm:py-6 sxphone:pl-3 sxphone:py-7 flex-55%">

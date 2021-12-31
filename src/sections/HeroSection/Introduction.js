@@ -3,9 +3,8 @@ import React, { useContext } from "react";
 import { Link } from "react-scroll";
 
 import ButtonPrimary from "../../UI/ButtonPrimary";
-import heroVectorLight from "../../assets/heroVectorLight.svg";
-import heroTest from "../../assets/herotest.svg";
-import heroVectorDark from "../../assets/heroVectorDark.svg";
+
+import heroVector from "../../assets/heroVector.svg";
 
 import { ThemeContext } from "../../context/theme-context";
 
@@ -34,9 +33,9 @@ const Introduction = (props) => {
       </div>
       <div className="w-11/12">
         {theme === "light" ? (
-          <img src={heroTest} alt="Hero Vector Light" />
+          <img src={heroVector} alt="Hero Vector Light" />
         ) : (
-          <img src={heroTest} alt="Hero Vector Dark" />
+          <img src={heroVector} alt="Hero Vector Dark" />
         )}
       </div>
     </div>

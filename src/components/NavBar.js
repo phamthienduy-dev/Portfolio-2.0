@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 
 import { BiSun, BiMoon, BiUser, BiGridAlt } from "react-icons/bi";
 
-import { ThemeContext } from "../../context/theme-context";
+import { ThemeContext } from "../context/theme-context";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { motion } from "framer-motion";
 
@@ -41,10 +41,10 @@ const NavBar = React.forwardRef((props, ref) => {
               className="text-4xl lg:text-3xl sm:text-2xl sphone:text-xl flex  font-extrabold justify-self-start"
               onClick={() => scroll.scrollToTop()}
             >
-              <a href="#">
+              <h1>
                 <span className="text-primary-200">DUY</span>
                 <span className="text-secondary-200">FE</span>
-              </a>
+              </h1>
             </div>
 
             <nav className="text-sm sm:text-xs lg:text-xs flex self-center gap-12 lg:gap-8 mobile:gap-5 sphone:gap-3 justify-self-end ">
@@ -87,28 +87,26 @@ const NavBar = React.forwardRef((props, ref) => {
                 </Link>
 
                 <div className="self-center md:hidden">
-                  <a
-                    href="#"
+                  <span
                     className={vietnamese && langueNotActive}
                     onClick={languageChangeHandler}
                   >
                     EN
-                  </a>{" "}
+                  </span>{" "}
                   |{" "}
-                  <a
-                    href="#"
+                  <span
                     className={!vietnamese && langueNotActive}
                     onClick={languageChangeHandler}
                   >
                     VN
-                  </a>
+                  </span>
                 </div>
                 <div className="2xl:hidden 1xl:hidden xl:hidden lg:hidden md:flex">
-                  <a onClick={languageChangeHandler} className="self-center">
+                  <span onClick={languageChangeHandler} className="self-center">
                     {vietnamese ? "EN" : "VN"}
-                  </a>
+                  </span>
                 </div>
-                <a
+                <span
                   href="#"
                   className="self-center transition duration-500 ease-in-out text-xl sm:text-base sphone:text-sm "
                 >
@@ -127,7 +125,7 @@ const NavBar = React.forwardRef((props, ref) => {
                       }}
                     />
                   )}
-                </a>
+                </span>
                 <motion.a
                   rel="noopener noreferrer"
                   className="bg-gradient-to-r from-secondary-200 to-primary-200 hover:shadow-lg dark:hover:bg-red-200 transition duration-300 text-white font-semibold px-4 py-3 rounded-md md:rounded text-sm lg:text-xs lg:px-4 lg:py-2 sm:px-3 sm:py-1 sm:text-sxs sphone:hidden"
