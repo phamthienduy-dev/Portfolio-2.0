@@ -1,6 +1,6 @@
 import { React } from "react";
 
-import CTAIllustrationTop from "./CTAIllustration";
+import CTAIllustration from "./CTAIllustration";
 import CTAHeading from "./CTAHeading";
 
 const CTASection = (props) => {
@@ -8,11 +8,8 @@ const CTASection = (props) => {
 
   return (
     <div className="container" id="cta">
-      <CTAHeading />
-      <CTAIllustrationTop
-        vietnamese={vietnamese}
-        setShowModal={props.setShowModal}
-      />
+      <CTAHeading vietnamese={vietnamese} />
+      <CTAIllustration vietnamese={vietnamese} />
     </div>
   );
 };

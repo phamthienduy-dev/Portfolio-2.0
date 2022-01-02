@@ -4,7 +4,7 @@ module.exports = {
   purge: ["./public/**/*.html", "./src/**/*.{js,jsx,ts,tsx,vue}"],
   darkMode: "class", // or 'media' or 'class'
   theme: {
-    flex: { "70%": "70%", "40%": "40%", "55%": "55%" },
+    flex: { "70%": "70%", "40%": "40%", "55%": "55%", "100%": "100%" },
     screens: {
       "2xl": { min: "1366px" },
       "1xl": { max: "1366px" },
@@ -138,7 +138,7 @@ module.exports = {
         nav: "0 16px 44px rgba(0,0,0,0.08)",
       },
       fontSize: {
-        sxs: ".5rem",
+        sxs: ".75rem",
       },
     },
   },
