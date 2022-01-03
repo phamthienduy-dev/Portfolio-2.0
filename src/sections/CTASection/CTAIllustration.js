@@ -14,7 +14,7 @@ const CTAIllustration = (props) => {
           <img src={CTAVector} alt="CTA Vector" />
         </div>
 
-        <div className="p-10 mobile:p-6 sphone:p-2 md:pl-8 md:py-8 sm:pl-6 sm:py-6 sxphone:pl-3 sxphone:py-7 flex-55%">
+        <div className="p-10 mobile:p-6 sphone:p-2 md:pl-8 md:py-8 sphone:py-3 sm:pl-6 sm:py-6 sxphone:pl-3 sxphone:py-7 flex-55%">
           <form
             className="relative"
             method="post"
@@ -25,7 +25,7 @@ const CTAIllustration = (props) => {
             <input type="hidden" name="form-name" value="contact" />
             <div className="">
               <label
-                className="font-semibold text-base sxm:text-sm mobile:text-xs text-gray-600 dark:text-gray-200 mb-2"
+                className="font-semibold text-base sxm:text-sm mobile:text-xs sphone:text-sm text-gray-600 dark:text-gray-200 mb-2"
                 htmlFor="name"
               >
                 {vietnamese ? "Tên" : "Your name"}
@@ -36,13 +36,13 @@ const CTAIllustration = (props) => {
                 placeholder={vietnamese ? "Phạm Thiên Duy" : "Pham Thien Duy"}
                 id="name"
                 name="name"
-                className="w-full pb-3 mt-1 text-xl sxm:text-lg mobile:text-base bg-transparent text-gray-600 border-b-2 dark:border-gray-900 border-gray-300 focus:border-gray-600 dark:text-white focus:outline-none dark:focus:border-gray-50"
+                className="w-full pb-3 mt-1 text-xl sxm:text-lg mobile:text-base sphone:text-lg bg-transparent text-gray-600 border-b-2 dark:border-gray-900 border-gray-300 focus:border-gray-600 dark:text-white focus:outline-none dark:focus:border-gray-50"
               />
             </div>
 
             <div className="mt-14 mobile:mt-8">
               <label
-                className="font-semibold text-base sxm:text-sm mobile:text-xs text-gray-600 dark:text-gray-200 mb-2"
+                className="font-semibold text-base sxm:text-sm mobile:text-xs sphone:text-sm text-gray-600 dark:text-gray-200 mb-2"
                 htmlFor="email"
               >
                 {vietnamese ? "Email" : "Your email"}
@@ -53,13 +53,13 @@ const CTAIllustration = (props) => {
                 placeholder="duyphamthien@outlook.com"
                 id="email"
                 name="email"
-                className="w-full pb-3 text-xl sxm:text-lg mobile:text-base mt-1 bg-transparent border-b-2 text-gray-600 dark:border-gray-900 dark:text-white border-gray-300 focus:border-gray-600 focus:outline-none dark:focus:border-gray-50"
+                className="w-full pb-3 text-xl sxm:text-lg mobile:text-base sphone:text-lg mt-1 bg-transparent border-b-2 text-gray-600 dark:border-gray-900 dark:text-white border-gray-300 focus:border-gray-600 focus:outline-none dark:focus:border-gray-50"
               />
             </div>
 
             <div className="mt-14 mobile:mt-8">
               <label
-                className="font-semibold text-base sxm:text-sm mobile:text-xs text-gray-600 dark:text-gray-200 mb-2"
+                className="font-semibold text-base sxm:text-sm mobile:text-xs sphone:text-sm text-gray-600 dark:text-gray-200 mb-2"
                 htmlFor="message"
               >
                 {vietnamese ? "Lời nhắn" : "Message"}
@@ -70,7 +70,7 @@ const CTAIllustration = (props) => {
                 placeholder={vietnamese ? "Lời nhắn" : "Your message"}
                 id="message"
                 name="message"
-                className="w-full pb-3 text-xl sxm:text-base mobile:text-sm mt-1 bg-transparent text-gray-600 border-b-2 dark:border-gray-900 focus:border-gray-600 dark:text-white border-gray-300 resize-none focus:outline-none dark:focus:border-gray-50"
+                className="w-full pb-3 text-xl sxm:text-base mobile:text-sm sphone:text-lg mt-1 bg-transparent text-gray-600 border-b-2 dark:border-gray-900 focus:border-gray-600 dark:text-white border-gray-300 resize-none focus:outline-none dark:focus:border-gray-50"
               ></textarea>
             </div>
 

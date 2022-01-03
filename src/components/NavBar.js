@@ -13,7 +13,7 @@ const NavBar = React.forwardRef((props, ref) => {
   const inView = props.inView;
 
   const langueNotActive =
-    "text-gray-300 hover:text-gray-900 transition duration-300 dark:text-gray-600 dark:text-gray-200 dark:hover:text-gray-200";
+    "text-gray-300 hover:text-gray-900 transition duration-300 dark:text-gray-600 dark:hover:text-gray-400 cursor:pointer";
 
   const languageChangeHandler = (e) => {
     e.preventDefault();
@@ -31,7 +31,7 @@ const NavBar = React.forwardRef((props, ref) => {
       >
         <div className="container">
           <div
-            className={`mx-2 grid grid-cols-2 text-gray-500 dark:text-gray-400   font-bold py-4 px-5 rounded-tl-2xl rounded-tr-2xl  ${
+            className={`mx-2 grid grid-cols-2 text-gray-500 dark:text-gray-400 cursor:pointer font-bold py-4 px-5 rounded-tl-2xl rounded-tr-2xl mobile:rounded-tl-xl mobile:rounded-tr-xl  ${
               !inView
                 ? "bg-white dark:bg-gray-900"
                 : "bg-gray-50 dark:bg-gray-800"
@@ -87,19 +87,21 @@ const NavBar = React.forwardRef((props, ref) => {
                 </Link>
 
                 <div className="self-center md:hidden">
-                  <span
+                  <a
+                    href="#"
                     className={vietnamese && langueNotActive}
                     onClick={languageChangeHandler}
                   >
                     EN
-                  </span>{" "}
+                  </a>{" "}
                   |{" "}
-                  <span
+                  <a
+                    href="#"
                     className={!vietnamese && langueNotActive}
                     onClick={languageChangeHandler}
                   >
                     VN
-                  </span>
+                  </a>
                 </div>
                 <div className="2xl:hidden 1xl:hidden xl:hidden lg:hidden md:flex">
                   <span onClick={languageChangeHandler} className="self-center">
